@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Libertinus+Mono&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body { 
+  font-family:"Poppins", sans-serif;
+  margin: 0; 
+  display: flex;
+  background: #c3ebfe;
+  float: inline-end; 
+  display: flex;
+  flex-direction: row; 
+}
+
+main h1 {
+  text-align: center;
+  font-size: 45px;
+  font-family: "Libertinus Mono", sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ccc;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  padding: 0 2em;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2em;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.navbar li a:hover {
+  background-color: #f0f0f0;
+}
+
+
+.sidebar {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  width: 240px;
+  height: calc(100vh - 60px);
+  background-color: #fff;
+  padding: 1em;
+  overflow-y: auto;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+main {
+  margin-top: 60px;
+  margin-right: 240px;
+  padding: 2em;
+  background: #c3ebfe;
+  box-sizing: border-box;
+}
+
+
+h2 {
+  margin-left: 13px;
+}
+
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2em;
+  margin: 0 auto 3em auto; 
+  padding-top: 3em;
+  max-width: 1120px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.image {
+    flex: 1;
+    margin-left:6%;
+    margin-top: 0.2%;}
+
+
+.text {
+  flex: 1;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: justify;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;                       
+  margin-left: 1%;
+  box-shadow: 0 0 5px rgba(0,0,0,0.1);       
+  overflow: hidden;   
+  padding: 1em;
+  padding-left: 1.2em;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
+  white-space: normal;
+}
+
+.evidenzia {
+  background-color: #c3ebfeba;
+  border-radius: 5px;
+
+}
+
+    
+.tagList li a {
+  top: 75px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: black;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-text-stroke: 0.5px transparent; 
+  margin-top:1.5%;
+}
+
+.drop-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: black;
+  text-decoration: none;
+  padding: 10px 12px;
+  display: block;
+  top:100%;
+  transition: background-color 0.2s;
+}
+
+.dropdown:hover .drop-link {
+  background-color: #c3ebfe;
+  border-radius: 6px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 17px;
+  margin-bottom: 0.2em; 
+  margin-top: 0.5em;
+}
+
+
+.tag-placeName { background-color: #ffe97f; }
+.tag-geogName { background-color: #aaf683; }
+.tag-reale { background-color: #62b6cb; }
+.tag-immaginario { background-color: #c8b6ff;}
+.tag-addName { background-color: #b2f7ef;}
+.tag-opere { background-color: plum; }
+.tag-date { background-color: #9cf945; }
+.tag-tema { background-color: #7ed6b9; }
+.tag-verbum { background-color: #d19a9b; }
+.tag-quote { background-color: #13acca; }
+.tag-orgName { background-color: #c4769a; }
+.tag-foreign { background-color: #ff7f51; }
+.tag-publisher { background-color: rgb(78, 126, 217); }
+.tag-j { background-color: rgb(229, 109, 79); }
+
+.tagList a:hover[href="#placeNames"] {
+  color: #ffe97f;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+.tagList a.active {
+  background-color: #c3ebfe !important;
+  font-weight: 400;
+  border-radius: 4px;
+  margin-top: 1.5%;
+}
+
+.tagList a.active:hover {
+  color: black !important;
+  -webkit-text-stroke-width: 0 !important;
+}
+
+.tagList a:hover[href="#geogNameTags"]{
+  color: #aaf683;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: black;
+}
+
+.tagList a[href="#persNames"]:hover {
+  color: #62b6cb;
+}
+  
+.tagList a[href="#persNames2"]:hover {
+  color:#c8b6ff;
+}
+  
+.tagList a[href="#addNames"]:hover {
+  color: #8ed3cb;
+}
+  
+.tagList a[href="#TitleOp"]:hover { 
+  color: plum;
+}
+  
+.tagList a[href="#dateTag"]:hover {
+  color: #9cf945;
+}
+  
+.tagList a[href="#rsTags"]:hover {
+  color: #7ed6b9; 
+}
+  
+.tagList a[href="#rsTag2"]:hover {
+  color: #cd9394;
+}
+  
+.tagList a[href="#citTag"]:hover {
+  color: #13acca;
+}
+  
+.tagList a[href="#orgNameTags"]:hover {
+  color:  #c4769a;
+}
+  
+.tagList a[href="#foreignTag"]:hover {
+  color: #ff7f51;
+}
+  
+.tagList a[href="#ediTag"]:hover {
+  color: rgb(78, 126, 217);
+}
+  
+.tagList a[href="#rivisteTag"]:hover {
+  color: rgb(229, 109, 79);
+}
+
+.dropdown-menu {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+  flex-wrap: wrap;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+  background-color: #ffffff;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.dropbtn:hover {
+  background-color: #f0f0f0;
+}
+
+.contenutonav {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 6px;
+  top: 100%;
+}
+
+.contenutonav a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+  top:100%;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+}
+
+.contenutonav a:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown:hover .contenutonav {
+  display: block;
+}
+
+#info {
+  margin-left: 7%;
+  padding-bottom:40px;
+}
+
+#info h2 {
+  margin-left: 0;
+}
+
+#tit-patria {
+  text-align: center;
+  margin: 0;
+}
+
+#tit-riv {
+text-align: center;
+font-weight: bold;
+}
+
+#sub-lo1 {
+  text-align: center;
+  margin: 0;
+}
+#tit-del1{
+text-align: center;
+margin: 0;
+}
+
+#tit-lo1{
+text-align: center;
+margin: 0;
+}
+
+#tit-biblio{
+text-align: center;
+margin: 0;
+}
+
+#tit-biblio2{
+text-align: center;
+margin: 0;
+}
+
+#tit-notizie{
+text-align: center;
+margin: 0;
+}
+
+.sidebar h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 22px;
+  margin-left: 0;
+  margin-top: 65px;
+}
+
+.glossario{
+  margin-left: 5%;
+}
+
+.sidebar .tagList {
+  flex-direction: column;
+  gap: 0.5px;
+}
+
+.sidebar .tagList li a {
+  display: block;
+}
+
+.hidden { display: none; }
+.visible { display: inline; }
+#correzioni {
+  background-color: #fcfcfc;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+}
