@@ -1,0 +1,3401 @@
+<!DOCTYPE HTML><html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>La Rassegna Settimanale</title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="stile.css"><script src="https://code.jquery.com/jquery-3.7.1.js"></script><script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script><script src="script.js"></script></head>
+   <body>
+      <div class="navbar">
+         <div class="dropdown"><a class="drop-link" href="#">Articoli</a><div class="contenutonav"><a href="#lecce">Corrispondenze da Lecce</a><a href="#patria">Auguri alla patria</a><a href="#delfo">Oracolo di Delfo</a></div>
+         </div>
+         <div class="dropdown"><a class="drop-link" href="#">Bibliografia</a><div class="contenutonav"><a href="#biblio1">Edvige, racconto</a><a href="#biblio2">Una visita agli ossari di San Martino e Solferino</a></div>
+         </div>
+         <div class="dropdown"><a class="drop-link" href="#not">Notizie</a></div>
+         <div class="dropdown"><a class="drop-link" href="#glossario">Glossario</a></div>
+         <div class="dropdown"><a class="drop-link" href="#info">Informazioni</a></div>
+      </div>
+      <aside class="sidebar">
+         <h2>Filtri</h2>
+         <ul class="tagList">
+            <li><a href="#placeNames" onclick="highlightTag('placeName'); return false;">Luoghi</a></li>
+            <li><a href="#geogNameTags" onclick="highlightTag('geogName'); return false;">Luoghi naturali</a></li>
+            <li><a href="#persNames" onclick="highlightTag('reale'); return false;">Persone reali</a></li>
+            <li><a href="#persNames2" onclick="highlightTag('immaginario'); return false;">Personaggi</a></li>
+            <li><a href="#addNames" onclick="highlightTag('addName'); return false;">Epiteti</a></li>
+            <li><a href="#TitleOp" onclick="highlightTag('opere'); return false;">Opere</a></li>
+            <li><a href="#dateTag" onclick="highlightTag('date'); return false;">Date</a></li>
+            <li><a href="#rsTags" onclick="highlightTag('tema'); return false;">Temi</a></li>
+            <li><a href="#rsTag2" onclick="highlightTag('verbum'); return false;">Concetti</a></li>
+            <li><a href="#citTag" onclick="highlightTag('quote'); return false;">Citazioni</a></li>
+            <li><a href="#orgNameTags" onclick="highlightTag('orgName'); return false;">Organizzazioni</a></li>
+            <li><a href="#foreignTag" onclick="highlightTag('foreign'); return false;">Lingua straniera</a></li>
+            <li><a href="#ediTag" onclick="highlightTag('publisher'); return false;">Case editrici</a></li>
+            <li><a href="#rivisteTag" onclick="highlightTag('j'); return false;">Riviste</a></li>
+         </ul>
+      </aside>
+      <main>
+         <h1> LA RASSEGNA SETTIMANALE </h1>
+         <p>
+            In questa sezione troverai i riferimenti testuali codificati con tag tematici secondo
+            le <strong>linee guida 
+               TEI/XML</strong>. 
+            Usa il menu laterale per navigare tra le diverse <strong>categorie</strong>.
+            </p>
+         <p>
+            Sono stati codificati gli articoli <strong>"Corrispondenze da Lecce"</strong> (Fascicolo 72, Volume 3), <strong>"Auguri alla
+               patria"</strong>(Fascicolo 157, Volume 7) e <strong>"Oracolo di Delfo"</strong> (Fascicolo 196, Volume 8). 
+            Dagli stessi fascicoli sono state codificate le bibliografie <strong>Giacomo Zanella, Edvige, racconto. — Firenze, G. Barbèra</strong> (Fascicolo 157)
+            e <strong>Cesira Siciliani, Una visita agli ossari di San Martino e Solferino</strong> (Fascicolo 196), mentre dal fascicolo 72 sono state codificate le 
+            prime due <strong>notizie</strong> incluse. 
+            </p>
+         <p>
+            Per quanto riguarda i fenomeni analizzati sono stati evidenziati nei testi <strong>luoghi, luoghi naturali, organizzazioni e persone</strong>
+            nominate nel testo, ma anche <strong>epiteti, verba</strong>, definiti come concetti astratti relativi al tema dell'articolo codificato, e i <strong>temi</strong> dei
+            testi stessi.
+            Sono stati codificati, inoltre, elementi correlati in modo più definito all'ambito
+            dell'editoria, quali <strong>date, opere, citazioni, 
+               case editrici e riviste </strong> menzionate. 
+            </p>
+         <p>
+            Per ulteriori informazioni, è possibile consulare un <strong>glossario</strong> dei termini evidenziati e delle categorie 
+            analizzate.
+            </p>
+         <p> Per visualizzare le <strong>correzioni</strong> premi qui: </p><button id="correzioni">Mostra/Nascondi Correzioni</button><section id=""></section>
+         <section id="lecce">
+            <div class="page">
+               <div class="image"><img src="img/lecce1.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-lecce-olive1"><map name="map-lecce-olive1"><area shape="rect" coords="323,401,433,413" href="#tit-lo1" alt="link to tit-lo1"><area shape="rect" coords="320,422,459,432" href="#sub-lo1" alt="link to sub-lo1"><area shape="rect" coords="272,430,506,491" href="#par1-lo1" alt="link to par1-lo1"><area shape="rect" coords="272,490,509,579" href="#par2-lo1" alt="link to par2-lo1"><area shape="rect" coords="271,578,512,710" href="#par3-lo1" alt="link to par3-lo1"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="tit-lo1">
+                     
+                     <br>
+                     
+                     CORRISPONDENZE DA LECCE
+                     
+                     </div>
+                  <div class="ab-block" id="sub-lo1">
+                     <br>
+                     LA RACCOLTA DELLE OLIVE
+                     </div>
+                  <div class="ab-block" id="par1-lo1">   
+                     
+                     <br>
+                     Appena cessato l’allegro canto della vendemmia, si co-
+                     
+                     
+                     <br> 
+                     mincia la 
+                     <rs data-type="tema">raccolta delle olive</rs>. Alla tiepida aria d’autunno,
+                     
+                     
+                     
+                     <br> 
+                     profumata dal forte odore del mosto pugliese, succede la
+                     
+                     <br>
+                     rigida atmosfera invernale, impregnata dal grato odore del
+                     
+                     <br> 
+                     nocciolo di olive che brucia continuamente nei frantoi, qui  
+                     
+                     <br> 
+                     detti volgarmente <em>trappeti</em>.
+                     
+                     </div>
+                  <div class="ab-block" id="par2-lo1">
+                     <br>
+                     Gli 
+                     <geogName>Appennini</geogName> presso 
+                     <placeName>Avigliano</placeName> si biforcano; un ramo
+                     
+                     <br>
+                     si avanza per la 
+                     <placeName>Basilicata</placeName> e le 
+                     <placeName>Calabrie</placeName> giù fino allo 
+                     <geogName>stretto
+                        
+                        <br>
+                        di Messina</geogName>, ed un altro con più umili altezze corre sul 
+                     <placeName>Ba-
+                        
+                        
+                        <br>
+                        rese</placeName> ed il 
+                     <placeName>Leccese</placeName>, formando le cosiddette 
+                     <geogName>Murge</geogName>, che non
+                     
+                     <br>
+                     sono in verità monti, ma colline, anzi altipiani, che segnano
+                     
+                     <br>
+                     il confine naturale della 
+                     <placeName>Provincia di Bari</placeName> e della 
+                     <placeName>Basilicata</placeName>.
+                     
+                     <br>
+                     Le 
+                     <geogName>Murge</geogName>, dopo aver raggiunto la maggiore loro elevatezza
+                     
+                     <br>
+                     presso 
+                     <placeName>Oria</placeName>, si abbassano e si <span class="choice correzione" id="d1e297"><span class="sic visible">spandono</span><span class="corr hidden" style="color: red;">espandono</span></span> nel 
+                     <placeName>Leccese</placeName>, dando
+                     
+                     <br>
+                     al suolo la più capricciosa varietà.
+                     </div>
+                  <div class="ab-block" id="par3-lo1">
+                     <br>
+                     L’
+                     <rs data-type="tema">operosità</rs> degli abitanti ha fatto <span class="choice correzione" id="d1e314"><span class="sic visible">mutar</span><span class="corr hidden" style="color: red;">mutare</span></span> faccia alla 
+                     <placeName>Pro-
+                        
+                        <br>
+                        vincia di Bari</placeName> che, quasi deserta negli altipiani delle 
+                     <geogName>Murge</geogName>,
+                     
+                     <br>
+                     a misura che scende con dolce pendìo fino al mare si co-
+                     
+                     <br>
+                     pre di vigne e oliveti, tempestata qua e là di giardini fio-
+                     
+                     <br>
+                     riti e di agrumeti. Questa artificiale e varia floridezza di
+                     
+                     <br>
+                     suolo va cessando nelle 
+                     <placeName>Terre d’Otranto</placeName>, dove si addensano
+                     
+                     <br>
+                     foreste di olive, che <span class="choice correzione" id="d1e342"><span class="sic visible">col</span><span class="corr hidden" style="color: red;">con il</span></span> loro cinereo fogliame danno un ma-
+                     
+                     <br>
+                     linconico aspetto alla provincia. La vite sul 
+                     <placeName><span class="choice correzione" id="d1e350"><span class="sic visible">littorale</span><span class="corr hidden" style="color: red;">litorale</span></span> barese</placeName>
+                     
+                     <br>
+                     è consociata all’ulivo, crescono da anni ed anni insieme e
+                     
+                     <br>
+                     non si sa quasi concepire un vigneto spogliato di ulivi. La 
+                     
+                     <br>
+                     vite allevata, curata, accarezzata dal contadino barese <span class="choice correzione" id="d1e363"><span class="sic visible">colle</span><span class="corr hidden" style="color: red;">con le</span></span>
+                     
+                     <br>
+                     maggiori sollecitudini ed esposta ai perpetui raggi del sole,
+                     
+                     <br>
+                     qui nel 
+                     <placeName>Leccese</placeName>, serpeggia per terra, sporca il suo frutto,
+                     </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="image"><img src="img/lecce2.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-lecce-olive2"><map name="map-lecce-olive2"><area shape="rect" coords="18,49,257,145" href="#par3-lo1.2" alt="link to par3-lo1.2"><area shape="rect" coords="15,143,259,281" href="#par4-lo2" alt="link to par4-lo2"><area shape="rect" coords="14,280,258,500" href="#par5-lo2" alt="link to par5-lo2"><area shape="rect" coords="20,497,259,720" href="#par6-lo2" alt="link to par6-lo2"><area shape="rect" coords="263,56,490,92" href="#par6-lo2.2" alt="link to par6-lo2.2"><area shape="rect" coords="261,94,494,193" href="#par7-lo2" alt="link to par7-lo2"><area shape="rect" coords="260,189,499,253" href="#par8-lo2" alt="link to par8-lo2"><area shape="rect" coords="161,252,499,521" href="#par9-lo2" alt="link to par9-lo2"><area shape="rect" coords="259,518,503,732" href="#par10-lo2" alt="link to par10-lo2"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="par3-lo1.2">
+                     
+                     <br>
+                     che quasi per rinfaccio offre al colono il più generoso vino
+                     
+                     <br>
+                     della penisola; e invece si eleva <span class="choice correzione" id="d1e383"><span class="sic visible">sovra</span><span class="corr hidden" style="color: red;">sopra</span></span> essa gigante e mae-
+                     
+                     <br>
+                     stoso l’olivo. Non è già che il 
+                     <placeName>Barese</placeName> dia solo più cura alla
+                     
+                     <br>
+                     vite e il 
+                     <placeName>Leccese</placeName> all’olivo; ma perchè l’ulivo nella 
+                     <placeName>terra d’O-
+                        
+                        <br>
+                        tranto</placeName> cresce per forza ingenita del suolo a bosco e a fore-
+                     
+                     <br>
+                     sta. Gli alberi coi loro rami vigorosi e colossali in qualche
+                     
+                     <br>
+                     luogo si avvicinano, s’intrecciano, vietando fin ai raggi 
+                     
+                     <br>
+                     del sole di farsi strada al suolo, su cui cresce umido e ver-
+                     
+                     <br>
+                     de il muschio e non altra vegetazione. 
+                     
+                     </div>
+                  <div class="ab-block" id="par4-lo2">
+                     <br>
+                     Dalle vicine 
+                     <placeName>province di Basilicata e di Bari</placeName> scendono 
+                     
+                     <br>
+                     in 
+                     <placeName>quella di Lecce</placeName> numerose schiere di contadini, che finiti
+                     
+                     <br>
+                     i lavori della stagione risalgono ai villaggi o ai monti na-
+                     
+                     <br>
+                     tali, per ridiscendere ai bisogni della stagione novella. Que
+                     
+                     <br>
+                     -sta 
+                     <rs data-type="tema">emigrazione ed immigrazione</rs> di lavoratori è una specie 
+                     
+                     <br>
+                     di 
+                     <rs data-type="tema">marea vivente</rs>, che si rinnova tre volte l’anno. La 
+                     <placeName>provincia
+                        
+                        <br>
+                        di Lecce</placeName> ha una popolazione di 493,594 abitanti sparsa sopra 
+                     
+                     <br>
+                     un’estensione di suolo di chilometri quadrati 8,529 coltivati in 
+                     
+                     <br>
+                     parte a vigne e a ulivi, il rimanente a pascoli ed a granaglie. 
+                     
+                     <br>
+                     La popolazione è insufficiente ai bisogni dell’
+                     <rs data-type="tema">agricoltura</rs>, spe-
+                     
+                     <br>
+                     cialmente per le raccolte delle granaglie e delle ulive. A questa 
+                     
+                     <br>
+                     insufficienza della popolazione si aggiunge un’altra causa, che 
+                     
+                     <br>
+                     determina questa 
+                     <rs data-type="tema">immigrazione di contadini</rs> nella 
+                     <placeName>provin-
+                        
+                        <br>
+                        cia di Lecce</placeName>.
+                     
+                     </div>
+                  <div class="ab-block" id="par5-lo2">
+                     <br>
+                     Nel 
+                     <placeName>Barese</placeName> la 
+                     <rs data-type="tema">condizione della plebe <span class="choice correzione" id="d1e479"><span class="sic visible">campagnuola</span><span class="corr hidden" style="color: red;"> campagnola</span></span></rs> è mi-
+                     
+                     <br>
+                     serrima; l'
+                     <rs data-type="tema">agricoltura</rs>, specialmente lungo il litorale vive 
+                     
+                     <br>
+                     miserabilmente. Chi non è stato nelle 
+                     <placeName>provincie meridio-
+                        
+                        <br>
+                        nali</placeName>, o, per dir più specificatamente, nelle 
+                     <placeName>Puglie</placeName>, avrà un
+                     
+                     <br>
+                     falso concetto del comune rurale e del comune urbano.
+                     
+                     <br>
+                     Nelle nostre statistiche sono ritenuti per urbani quei co-
+                     
+                     <br>
+                     muni che hanno un centro almeno di 6000 abitanti di po-
+                     
+                     <br>
+                     polazione agglomerata. <span class="choice correzione" id="d1e509"><span class="sic visible">Or bene</span><span class="corr hidden" style="color: red;">Orbene</span></span>, in 
+                     <placeName>Puglia</placeName>, il grosso della 
+                     
+                     <br>
+                     popolazione delle grandi città è costituito da contadini, 
+                     
+                     <br>
+                     tranne soltanto quella di 
+                     <placeName>Bari</placeName> e di 
+                     <placeName>Trani</placeName>. Da ciascuno di
+                     
+                     <br>
+                     questi grossi casaloni, come 
+                     <placeName>Andria</placeName>, 
+                     <placeName>Bitonto</placeName>, 
+                     <placeName>Bisceglie</placeName>, 
+                     <placeName>Co-
+                        
+                        <br>
+                        ato</placeName>, 
+                     <placeName>Altamura</placeName>, ogni mattina esce una popolazione di quattro
+                     
+                     <br>
+                     in cinque mila abitanti, il fiore della popolazione più vigorosa 
+                     
+                     <br> 
+                     d’ambo i sessi, che si spande nelle campagne per far ritorno
+                     
+                     <br>
+                     in città al tramonto del sole. Gli altipiani, come le 
+                     <geogName>Murge</geogName>
+                     
+                     <br>
+                     di 
+                     <placeName>Gravina</placeName> e di 
+                     <placeName>Altamura</placeName>, sono deserti di abitanti, mentre 
+                     
+                     <br>
+                     nelle città brulicano innumerevoli famiglie di miseri e fa-
+                     
+                     <br>
+                     melici <em>cozzali</em> per altro operosi e intelligenti, che ad ogni
+                     
+                     <br>
+                     nuova bisogna dei campi si rovesciano a ondate nella 
+                     <placeName>Capi-
+                        
+                        <br>
+                        tanata</placeName> e nel 
+                     <placeName>Leccese</placeName>. L’abilità di questi diseredati nella
+                     
+                     <br>
+                     coltura specialmente degli ulivi è tale, che da per tutto si 
+                     
+                     <br>
+                     dice in 
+                     <placeName>Puglia</placeName>, che <em>
+                        <quote data-type="quote">l’accétta del marinese ha il taglio d’oro</quote></em>.
+                     
+                     </div>
+                  <div class="ab-block" id="par6-lo2">
+                     <br>
+                     Più <span class="choice correzione" id="d1e606"><span class="sic visible">lagrimevole</span><span class="corr hidden" style="color: red;">lacrimevole</span></span> ancora è la 
+                     <rs data-type="tema">condizione del contadino</rs> 
+                     
+                     <br>
+                     della 
+                     <placeName>Basilicata</placeName>; che, come tutti sanno e italiani e stranieri, 
+                     
+                     <br>
+                     caccia i figli errabondi <span class="choice correzione" id="d1e622"><span class="sic visible">pel</span><span class="corr hidden" style="color: red;">per il</span></span> mondo, incapace a sostenerli. 
+                     
+                     <br>
+                     Prima che avessero conosciuto ed agognato nuovi cieli e lon-
+                     
+                     <br>
+                     tani posti, i Lucani discendevano con più modesti  
+                     <rs data-type="verbum">desideri</rs>
+                     
+                     <br>
+                     alla 
+                     <placeName>pianura pugliese</placeName>. La loro abilità essendo del tutto in-
+                     
+                     <br>
+                     feriore a quella del contadino barese, essi sono <span class="choice correzione" id="d1e642"><span class="sic visible">rimunerati</span><span class="corr hidden" style="color: red;">remunerati</span></span>
+                     
+                     <br>
+                     assai meno di questo. Ai primi venti del novembre, che
+                     
+                     <br>
+                     sgravano gli alberi di buona parte di ulive, scendono dunque
+                     
+                     <br>
+                     alla buona di Dio compagnie numerose d'ambo i sessi e di tutte
+                     
+                     <br>
+                     le età e si <span class="choice correzione" id="d1e656"><span class="sic visible">spandono</span><span class="corr hidden" style="color: red;">espandono</span></span> per tutta la provincia fra questi immensi
+                     
+                     <br>
+                     boschi d'ulivi, dove comincia la raccolta che dura per quasi
+                     
+                     <br>
+                     tutto l’inverno. Per la sterminata estensione degli oliveti 
+                     
+                     <br>
+                     non si pone cura alla qualità, ma alla quantità del prodotto; 
+                     
+                     <br>
+                     quindi si raccolgono le olive quando sono già nere e quando
+                     
+                     <br>
+                     già gli alberi agitati dai venti ne hanno lasciato cadere
+                     
+                     <br>
+                     buona parte al suolo. Gli uomini montano <span class="choice correzione" id="d1e674"><span class="sic visible">su gli</span><span class="corr hidden" style="color: red;">sugli</span></span> alberi e
+                     
+                     <br>
+                     squassano vigorosamente i rami, o li percuotono con per-
+                     
+                     <br>
+                     tiche, sicché <span class="choice correzione" id="d1e683"><span class="sic visible">colle</span><span class="corr hidden" style="color: red;">con le</span></span> olive cadono al suolo foglie e messe no-
+                     
+                     <br>
+                     velle, che al prossimo anno sarebbero state fruttifere. Non 
+                     
+                     <br>
+                     voglio già dire che non vi <span class="choice correzione" id="d1e693"><span class="sic visible">sieno</span><span class="corr hidden" style="color: red;">siano</span></span> padroni che costringono 
+                     
+                     <br>
+                     questi barbari contadini a usare altri mezzi meno distrut-
+                     
+                     </div>
+                  <div class="ab-block" id="par6-lo2.2">
+                     <br>
+                     tivi; ma per lo più il padrone diretto è assente dai suoi 
+                     
+                     <br>
+                     feudi, e tutta la sua campagna è affidata alle cure di un 
+                     
+                     <br>
+                     estraneo. Le donne raccolgono dal suolo le olive cadute, 
+                     
+                     <br>
+                     che con appositi carri vengono trasportate al <em>trappeto</em>.
+                     
+                     </div>
+                  <div class="ab-block" id="par7-lo2">
+                     <br>
+                     I Toscani difficilmente possono giungere a concepire 
+                     
+                     <br>
+                     uno di questi nostri frantoi, oscuri, immondi, nauseanti. Im-
+                     
+                     <br>
+                     mensi fabbricati dove giorno e notte si lavora a luce d’olio, e 
+                     
+                     <br>
+                     dove brucia perpetuamente il nocciolo per dare all’am-
+                     
+                     <br>
+                     biente il maggiore calore possibile e fare staccare facil-
+                     
+                     <br>
+                     mente le molecole oleose dalle altre materie, che le impri-
+                     
+                     <br>
+                     gionano. Le olive sono gettate e ammassate in fossi profondi 
+                     
+                     <br>
+                     e quadrati dove si lasciano fermentare, dando quell’ odore 
+                     
+                     <br>
+                     fetido, che è la ragione prima del deprezzamento dell’olio 
+                     
+                     <br>
+                     leccese.
+                     
+                     </div>
+                  <div class="ab-block" id="par8-lo2">
+                     <br>
+                     I <em>trappeti</em> sono affatto insufficienti in proporzione all’esten-
+                     
+                     <br>
+                     sione degli oliveti, perciò alcuni signori hanno introdotto il 
+                     
+                     <br>
+                     motore a vapore per macinare e comprimere le olive. Del resto
+                     
+                     <br>
+                     generalmente si adoperano i torchi di ferro e di legno e più 
+                     
+                     <br>
+                     raramente strettoi idraulici, dopo averle stritolate sotto 
+                     
+                     <br>
+                     ruote di pietra dura, meccanismo detto <em>vasca</em>. 
+                     
+                     </div>
+                  <div class="ab-block" id="par9-lo2">
+                     <br>
+                     Non è già che <span class="choice correzione" id="d1e761"><span class="sic visible">quivi</span><span class="corr hidden" style="color: red;">qui vi</span></span>
+                     <span class="choice correzione" id="d1e766"><span class="sic visible">sieno</span><span class="corr hidden" style="color: red;">siano</span></span> ignorati i migliori metodi di 
+                     
+                     <br>
+                     fabbricazione degli oli, per cui sono così pregiati da poco 
+                     
+                     <br>
+                     tempo quelli della vicina 
+                     <placeName>Provincia di Bari</placeName> e da gran tempo 
+                     
+                     <br>
+                     quelli di 
+                     <placeName>Toscana</placeName>. Si sa, per esempio, che le olive <span class="choice correzione" id="d1e784"><span class="sic visible">debbono</span><span class="corr hidden" style="color: red;">devono</span></span>
+                     
+                     
+                     <br>
+                     essere raccolte quando sono ancor verdi, e a mano e non 
+                     
+                     <br>
+                     già a quella maniera vandalica; che se non possono essere 
+                     
+                     <br>
+                     frante e compresse appena raccolte, <span class="choice correzione" id="d1e796"><span class="sic visible">debbono</span><span class="corr hidden" style="color: red;">devono</span></span> essere almeno 
+                     
+                     <br>
+                     depositate, non ammonticchiate, in luoghi asciutti e ventilati 
+                     
+                     <br>
+                     per non farle riscaldare; che i frantoi debbono essere arieg-
+                     
+                     <br>
+                     giati, e pulitissimi i tini, dove si lascia a raffinare l’olio;
+                     
+                     <br>
+                     poiché colla 
+                     <rs data-type="tema">estrazione dell’olio</rs> a freddo si ottengono oli della 
+                     
+                     <br>
+                     migliore qualità; e <span class="choice correzione" id="d1e815"><span class="sic visible">niuno</span><span class="corr hidden" style="color: red;">nessuno</span></span> vieta di sottoporre al caldo le acque 
+                     
+                     <br> 
+                     fecciose e gli altri residui, come le sanse per ottenere una qua-
+                     
+                     <br> 
+                     lità scadente di oli. I nemici capitali degli oli fini sono il 
+                     
+                     <br>  
+                     calore e il cattivo odore, che quasi istantaneamente si pro-
+                     
+                     <br> 
+                     paga e infetta qualunque gran massa d’olio. Sono novità 
+                     
+                     <br> 
+                     queste di cui son già piene le fosse, ma tant’è', l’uomo è 
+                     
+                     <br>
+                     anch’esso un animale d’abitudini, e la nostra coscienza, di-
+                     
+                     <br>
+                     ceva bene 
+                     <persName data-type="reale">Shakespeare</persName>, è un accumulazione di queste abi-
+                     
+                     <br>
+                     tudini. 
+                     <rs data-type="tema">Il contadino è per sua natura tenace del passato</rs>, 
+                     
+                     <br>
+                     è conservatore per eccellenza; e questo vi spiega in parte 
+                     
+                     <br>
+                     perchè l'
+                     <rs data-type="tema">agricoltura</rs> sia fra le industrie la più tarda a pro-
+                     
+                     <br>
+                     gredire. Essa specialmente si giova degli ultimi strati sociali; 
+                     
+                     <br>
+                     e non c’è verso di farla avanzare d’un passo, se capitali ed 
+                     
+                     <br>
+                     istituzioni economiche e politiche non facciano da leva per 
+                     
+                     <br>
+                     smuovere e infondere nuovo vigore nell’infima plebe <span class="choice correzione" id="d1e861"><span class="sic visible">cam-</span><span class="corr hidden" style="color: red;">cam-</span></span>
+                     
+                     
+                     <br>
+                     <span class="choice correzione" id="d1e868"><span class="sic visible">pagnuola</span><span class="corr hidden" style="color: red;">pagnola</span></span>
+                     
+                     
+                     </div>
+                  <div class="ab-block" id="par10-lo2">
+                     <br>
+                     La 
+                     <placeName>Provincia di Lecce</placeName> sente il disagio comune ad altre 
+                     
+                     <br>
+                     province; anzi per essa ci sono pure ragioni speciali di 
+                     
+                     <br>
+                     
+                     <rs data-type="verbum">desideri</rs> nutriti o fatti nutrire, di 
+                     <rs data-type="verbum">speranze</rs>accarezzate 
+                     
+                     <br>
+                     invano, che accrescono vie più il malcontento. Al princi-
+                     
+                     <br>
+                     pio della 
+                     <rs data-type="tema">unificazione italiana</rs>, e quando specialmente co-
+                     
+                     <br>
+                     minciarono i lavori ferroviari e quelli del porto di 
+                     <placeName>Brin-
+                        
+                        <br>
+                        disi</placeName>, i prezzi di tutte le derrate salirono; quindi contenti i 
+                     
+                     <br>
+                     lavoratori, contentissimi i proprietari; gli oli lucidi leccesi 
+                     
+                     <br>
+                     ebbero un rapido slancio di prezzo per il gran numero 
+                     
+                     <br>
+                     cresciuto delle macchine, per uso delle quali furono trovati 
+                     
+                     <br>
+                     eccellenti. Ma le macchine non potevano crescere tutti i
+                     
+                     <br>
+                     giorni e la richiesta venne a mancare; e il porto di  
+                     <placeName>Brin-
+                        
+                        <br>
+                        disi</placeName> che prometteva mari e mondi, e le ferrovie interne 
+                     
+                     <br>
+                     promesse e mancate furono una vera disillusione. Il pro-
+                     
+                     <br>
+                     prietario di oli si vide ben presto diminuire le entrate dei 
+                     
+                     <br>
+                     suoi oliveti, quando già aveva intrapreso lavori di miglioria 
+                     
+                     <br>
+                     così nei frantoi, come nei fondi, ma non si vide certo 
+                     
+                     <br>
+                     scemare le tasse. I contadini, che avevano gongolato nei 
+                     
+                     <br>
+                     primi anni al luccicare delle belle monete d'argento e alla 
+                     
+                     <br>
+                     gran richiesta dei lavori, non avevano badato al prezzo sem-
+                     
+                     </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="image"><img src="img/lecce3.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-lecce-olive3"><map name="map-lecce-olive3"><area shape="rect" coords="17,51,251,451" href="#par10-lo2.2" alt="link to par10-lo2.2"><area shape="rect" coords="16,448,249,585" href="#par11-lo3" alt="link to par11-lo3"><area shape="rect" coords="21,584,250,692" href="#par12-lo3" alt="link to par12-lo3"><area shape="rect" coords="32,690,253,705" href="#par13-lo3" alt="link to par13-lo3"><area shape="rect" coords="252,57,486,180" href="#par13-lo3.2" alt="link to par13-lo3.2"><area shape="rect" coords="254,181,482,249" href="#par14-lo3" alt="link to par14-lo3"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="par10-lo2.2"> 
+                     <br>
+                     pre crescente del pane e delle altre materie prime. Ma ora...
+                     
+                     <br>
+                     ai danni provenienti da ordine economico si sono aggiunti 
+                     
+                     <br>
+                     quelli di ordine naturale: per un decennio gli oliveti si sono 
+                     
+                     <br>
+                     ostinati a non produrre affatto. E i proprietari, pur <span class="choice correzione" id="d1e951"><span class="sic visible">colle</span><span class="corr hidden" style="color: red;">con le</span></span> 
+                     
+                     <br>
+                     migliori intenzioni del mondo per la 
+                     <rs data-type="verbum">deficienza</rs> di numera-
+                     
+                     <br>
+                     rio e per la vastità delle tenute a oliveto, non hanno potuto 
+                     
+                     <br>
+                     migliorare sensibilmente la 
+                     <rs data-type="tema">coltivazione degli ulivi</rs> e la 
+                     <rs data-type="tema">fab-
+                        
+                        <br>
+                        bricazione degli oli</rs>. Per contraccolpo ne ha patito anche
+                     
+                     <br>
+                     quel povero popolo emigrante, già caparrato <span class="choice correzione" id="d1e977"><span class="sic visible">nella state pei</span><span class="corr hidden" style="color: red;">nell'estate per i</span></span> 
+                     
+                     <br>
+                     lavori <span class="choice correzione" id="d1e984"><span class="sic visible">del verno</span><span class="corr hidden" style="color: red;">dell'inverno</span></span>; sicché le magre mercedi giornaliere sono 
+                     
+                     <br>
+                     in parte sfumate prima ancora che cominci la raccolta delle 
+                     
+                     <br>
+                     olive. Come sempre, il maschio piglia maggiore mercede 
+                     
+                     <br>
+                     della donna, l’uno da una lira a 1,50 e l’altra da 10 a 15 
+                     
+                     <br>
+                     soldi (s’intende bene senza pane), secondo le varie costuman-
+                     
+                     <br>
+                     ze agricole locali e la generosità dei padroni. Le ragazze 
+                     
+                     <br>
+                     anch’esse sono caparrate e talora corrono alla rinfusa in 
+                     
+                     <br>
+                     cerca di lavoro, o affidate a conoscenti o in mezzo ad altre
+                     
+                     <br>
+                     amiche; o se no alla buona di Dio! Queste fanciulle slom-
+                     
+                     <br>
+                     bate dalle fatiche, e accasciate dalla 
+                     <rs data-type="verbum">miseria</rs> hanno molto
+                     
+                     <br>
+                     limitato il sentimento del pudore; la loro cara 
+                     <rs data-type="verbum">gioventù</rs> fugge,
+                     
+                     <br>
+                     fugge via presto, e chi l’ha goduta, l’ha goduta. Dormono
+                     
+                     <br>
+                     in grandi stanzoni delle fattorie, per lo più separati i maschi 
+                     
+                     <br>
+                     dalle femmine; talvolta anche insieme negli stessi stanzoni. 
+                     
+                     <br>
+                     Qual paura vi sarebbe? Prostrati sulla paglia, oppressi dal 
+                     
+                     <br>
+                     sonno, giacciano come carcami; se qualche più potente istin-
+                     
+                     <br>
+                     to giovanile tiene desta qualche pupilla, non oso dire che 
+                     
+                     <br>
+                     quella gente sia più corrotta della plebe cittadina. Del resto 
+                     
+                     <br>
+                     certi 
+                     <rs data-type="verbum">peccati</rs> sono 
+                     <rs data-type="verbum">peccati</rs> veniali nei bassi fondi sociali,
+                     
+                     <br>
+                     dove l’ambiente e l’aria stessa è satura di vizi, e la donna,
+                     
+                     <br> 
+                     come l’uomo, è costretta ad affrontare <span class="choice correzione" id="d1e1045"><span class="sic visible">colla</span><span class="corr hidden" style="color: red;">con la</span></span> sua audacia 
+                     
+                     <br>  
+                     giorno per giorno le asprezze e le urgenze della vita fisica; 
+                     
+                     <br>  
+                     e che 
+                     <rs data-type="verbum">pudore</rs>, e che 
+                     <rs data-type="verbum">virtù</rs>, e che istruzione! vivere e solo 
+                     
+                     <br>  
+                     vivere per non morire è il premio d'ogni suo sforzo, della sua 
+                     
+                     <br>  
+                     
+                     <rs data-type="tema">lotta indeclinabile ed incessante</rs>. Se le donne o le fanciulle non 
+                     
+                     <br>  
+                     perdono affatto l'
+                     <rs data-type="verbum">onestà</rs>, la 
+                     <rs data-type="verbum">verecondia</rs> e la 
+                     <rs data-type="verbum">grazia</rs> restano nel 
+                     
+                     <br>  
+                     loro cuore qualità alterate, come corde che non danno più
+                     
+                     <br>  
+                     l’usata armonia. Chi prima di tutti e più di tutti usufruisce
+                     
+                     <br>  
+                     di quella prostrazione morale è un qualche 
+                     <persName data-type="immaginario">D. Rodrigo</persName>
+                     
+                     <br>  
+                     del luogo; e sono quasi tentato a dire che non c’è 
+                     <rs data-type="verbum">peccato</rs>
+                     
+                     <br>  
+                     di quella classe al quale l’agiato ed ozioso proprietario non 
+                     
+                     <br>   
+                     abbia dato causa o almeno stimoli. 
+                     
+                     </div>
+                  <div class="ab-block" id="par11-lo3"> 
+                     <br>
+                     Compiuta la raccolta, tutta questa gente torna alla 
+                     
+                     <br>
+                     spicciolata ai lontani casali; ci torna gaia e frettolosa; 
+                     
+                     <br>
+                     il guadagno è scarso e la fatica ha consumato qualche
+                     
+                     <br>
+                     anno della loro giovinezza; ma che monta? Con quel
+                     
+                     <br>
+                     po’ di <span class="choice correzione" id="d1e1113"><span class="sic visible">danaro serbato</span><span class="corr hidden" style="color: red;">denaro conservato</span></span> hanno innanzi a loro dei giorni si-
+                     
+                     <br>
+                     curi e tanto basta per farli contenti; e il mattino non si 
+                     
+                     <br>
+                     desteranno intrizziti sulla paglia della fattoria al vociare 
+                     
+                     <br>
+                     antipatico del soprastante, e poi rivedranno qualche persona 
+                     
+                     <br>
+                     cara, qualche viso sognato; poiché un po’ di cuore, crede-
+                     
+                     <br>
+                     telo a me, resta sempre sotto quelle vesti di fustagno. Ri-
+                     
+                     <br>
+                     tornano dunque ai luoghi natali; avanti! la strada non ha 
+                     
+                     <br>
+                     più ciottoli e l’aria sferza invano quelle facce gioconde; e 
+                     
+                     <br>
+                     la loro mesta cantilena è un ultimo saluto alla fattoria del 
+                     
+                     <br>
+                     padrone, agli abitanti che restano, a quei boschi d’ulivi. 
+                     
+                     </div>
+                  <div class="ab-block" id="par12-lo3"> 
+                     <br>
+                     La raccolta è finita, ma dura ancora nei chiusi frantoi 
+                     
+                     <br>
+                     la 
+                     <rs data-type="tema">estrazione degli oli</rs>; e <span class="choice correzione" id="d1e1146"><span class="sic visible">quivi</span><span class="corr hidden" style="color: red;">qui vi</span></span> sono adoperati gli operai 
+                     
+                     <br>
+                     più intelligenti, che faticano più eccessivamente, ma sono per 
+                     
+                     <br>
+                     altro <span class="choice correzione" id="d1e1156"><span class="sic visible">rimunerati</span><span class="corr hidden" style="color: red;">remunerati</span></span> per questi paesi molto bene. È difficile ri-
+                     
+                     <br>
+                     durre in cifre le mercedi di questi operai, poiché i patti che 
+                     
+                     <br>
+                     stabiliscono coi padroni differiscono da luogo a luogo e ta-
+                     
+                     <br>
+                     lora da padrone a padrone; alcuni proprietari <span class="choice correzione" id="d1e1167"><span class="sic visible">di fatti</span><span class="corr hidden" style="color: red;">difatti</span></span> si 
+                     
+                     <br>
+                     obbligano di somministrare una minestra di legumi con pane 
+                     
+                     <br>
+                     e mezzo litro di vino al giorno per individuo e la mercede 
+                     
+                     <br>
+                     in tal caso non è mai superiore ad una lira: altri poi non 
+                     
+                     <br>
+                     danno cibo di sorta ma pagano 1,50 a L. 2,00 al giorno. 
+                     
+                     </div>
+                  <div class="ab-block" id="par13-lo3"> 
+                     <br> 
+                     Io mi trovo molto imbrogliato a dirvi la rendita di un 
+                     </div>
+                  <div class="ab-block" id="par13-lo3.2">
+                     <br>
+                     oliveto, <span class="choice correzione" id="d1e1189"><span class="sic visible">innanzi tutto</span><span class="corr hidden" style="color: red;">innanzitutto</span></span> perchè dovrei trovarvi la media pro-
+                     
+                     <br>
+                     duzione di un decennio, e poi, perchè l’olio subisce varia-
+                     
+                     <br>
+                     zione di prezzo molto sensibili secondo che il frantoio o 
+                     
+                     <br>
+                     la conserva degli oli è posta vicino o lontano dalla fer-
+                     
+                     <br>
+                     rovia; poiché l’olio, più di qualunque liquido, ha bisogno
+                     
+                     <br>
+                     di forti ed ottimi recipienti, e, pel suo grande valore, di 
+                     
+                     <br>
+                     essere custodito da persone di somma fiducia. E poi in ta-
+                     
+                     <br>
+                     lune contrade gli olivi sono serrati e fitti a foreste, al-
+                     
+                     <br>
+                     trove piuttosto lontani, e di sotto si semina ogni sorta di 
+                     
+                     <br>
+                     granaglie. Questo soltanto posso dire, che ogni tomolo di 
+                     
+                     <br>
+                     olive dà circa uno staio di olio; ma il prezzo commerciale 
+                     
+                     <br>
+                     di quest’olio, ognuno può leggerlo nei listini di borsa, è 
+                     
+                     <br>
+                     sempre da una metà a un terzo inferiore a quello di 
+                     <placeName>Bari</placeName>. 
+                     
+                     </div>
+                  <div class="ab-block" id="par14-lo3"> 
+                     <br>
+                     Non debbo qui tralasciare di dire che molti proprietari 
+                     
+                     <br>
+                     di centri commerciali s’ingegnano a 
+                     <rs data-type="tema">produrre oli fini coi 
+                        
+                        <br>
+                        metodi novelli</rs>, ed io non posso che fare un augurio a questa 
+                     
+                     <br>
+                     terra geniale e a questi intelligentissimi abitanti, nella cui 
+                     
+                     <br>
+                     terra suona il più gentile dialetto meridionale: che, cioè, 
+                     
+                     <br>
+                     sieno al più presto soddisfatti i 
+                     <rs data-type="verbum">desideri</rs> che nutrono da pa-
+                     
+                     <br>
+                     recchi anni di buone vie e di migliori porti.
+                     
+                     </div>
+               </div>
+            </div>
+         </section>
+         <section id="patria">
+            <div class="page">
+               <div class="image"><img src="img/patria1.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-patria1"><map name="map-patria1"><area shape="rect" coords="9,21,492,118" href="#tit-riv" alt="link to tit-riv"><area shape="rect" coords="72,121,198,137" href="#tit-patria" alt="link to tit-patria"><area shape="rect" coords="22,138,249,222" href="#par1-p1" alt="link to par1-p1"><area shape="rect" coords="24,221,252,535" href="#par2-p1" alt="link to par2-p1"><area shape="rect" coords="27,534,254,675" href="#par3-p1" alt="link to par3-p1"><area shape="rect" coords="255,120,485,361" href="#par3-p1.2" alt="link to par3-p1.2"><area shape="rect" coords="256,360,493,678" href="#par4-p1" alt="link to par4-p1"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="tit-riv">
+                     
+                     <br>
+                     
+                     
+                     <h2 class="section-title">LA RASSEGNA SETTIMANALE</h2>
+                     
+                     
+                     
+                     <br>
+                     DI POLITICA, SCIENZE, LETTERE ED ARTI.
+                     
+                     
+                     
+                     <br>
+                     
+                     Vol.7º 
+                     
+                     
+                     
+                     
+                     <placeName>Roma</placeName>, 
+                     
+                     
+                     
+                     <date>2 Gennaio 1881</date> 
+                     
+                     Nº157.
+                     
+                     </div>
+                  <div class="ab-block" id="tit-patria">    
+                     
+                     <br>
+                     AUGURI ALLA PATRIA
+                     </div>
+                  <div class="ab-block" id="par1-p1">
+                     <br>
+                     La generazione che la continua catena della 
+                     <rs data-type="verbum">solidarietà</rs>
+                     
+                     <br>
+                     fra i passati e i venturi mena oggi a fare il suo còmpito 
+                     
+                     <br>
+                     è quasi rinnovata completamente da quella con la quale, ora 
+                     
+                     <br>
+                     è più d’un trentennio, il movimento italiano cominciava: ce 
+                     
+                     <br>
+                     lo rammentano recentissime tombe. Ed è perciò tanto più 
+                     
+                     <br>
+                     necessario che ognuno acquisti la 
+                     <rs data-type="verbum">coscienza</rs> esatta del pro-
+                     
+                     <br>
+                     prio dovere, ne accetti gli inseparabili sacrificii e lo adempia; 
+                     
+                     <br>
+                     così 
+                     <rs data-type="tema">il paese e le sue classi</rs>, come il 
+                     <orgName>parlamento</orgName> e i suoi 
+                     
+                     <br>
+                     
+                     <orgName>partiti</orgName>, come il 
+                     <orgName>governo</orgName> e 
+                     <orgName>la Corona</orgName>. 
+                     
+                     </div>
+                  <div class="ab-block" id="par2-p1">
+                     <br>
+                     Il fardello, che ci scarica addosso il passato, contiene, a 
+                     
+                     <br>
+                     giudizio di molti, cose tutt’altro che liete. La 
+                     <orgName>Sinistra</orgName> ve-
+                     
+                     <br>
+                     nendo al potere scoperse le non poche e forse quasi in-
+                     
+                     <br>
+                     consapevoli divergenze d’idee che andavano confuse nel
+                     
+                     <br>
+                     buio no di una continua opposizione, e sembra avere speso 
+                     
+                     <br>
+                     le combinazioni di gabinetti in <span class="choice correzione" id="d1e1347"><span class="sic visible">isventare</span><span class="corr hidden" style="color: red;">sventare</span></span> e eliminare, una 
+                     
+                     <br>
+                     dopo l’altra, un nembo di 
+                     <rs data-type="verbum">illusioni</rs>: e poiché non si vede 
+                     
+                     <br>
+                     un nucleo d’uomini raccolti e capaci di sostituire a questa 
+                     
+                     <br>
+                     azione governativa un’altra migliore, al paese non resta 
+                     
+                     <br>
+                     che piangere sulle perdute 
+                     <rs data-type="verbum">illusioni</rs> o tentare qualche colpo 
+                     
+                     <br>
+                     audace; onde si spiega il 
+                     <rs data-type="tema">malcontento profondo della grande 
+                        
+                        <br>
+                        maggioranza</rs> e le nuove audacie delle 
+                     <orgName>sètte sovversive</orgName>. Ma 
+                     
+                     <br>
+                     conviene avvertire che in tutto questo male vi ha pur <span class="choice correzione" id="d1e1380"><span class="sic visible">anco</span><span class="corr hidden" style="color: red;">anche</span></span>
+                     
+                     <br>
+                     il necessario <span class="choice correzione" id="d1e1387"><span class="sic visible">resultato</span><span class="corr hidden" style="color: red;">risultato</span></span> del 
+                     <rs data-type="tema">primo periodo di prova di un 
+                        
+                        <br>
+                        libero governo</rs>, quello di elaborare l’
+                     <rs data-type="verbum">idea</rs> critica di essa, di 
+                     
+                     <br>
+                     togliere quindi dalle menti molte 
+                     <rs data-type="verbum">illusioni</rs>, di capacitare il 
+                     
+                     <br>
+                     paese di quelle necessità che tutti i 
+                     <orgName>governi</orgName>, siano essi fondati 
+                     
+                     <br>
+                     sulla 
+                     <rs data-type="verbum">libertà</rs> o sull’
+                     <rs data-type="verbum">arbitrio</rs>, hanno comuni; di far che negli 
+                     
+                     <br>
+                     animi, apertisi a una illimitata fiducia nel nuovo 
+                     <orgName>regime</orgName>, suc-
+                     
+                     <br>
+                     cedano alle diffidenze per il favoritismo quelle per la ciar-
+                     
+                     <br>
+                     lataneria: di disegnare più fortemente i 
+                     <rs data-type="tema">confini dei nuovi 
+                        
+                        <br>
+                        poteri</rs> e chiarirne il carattere e l’ufficio; e, di tutta una ma-
+                     
+                     <br>
+                     tassa arruffata di questioni confuse nel nome vago di politica, 
+                     
+                     <br>
+                     alcune allargare ed estendere nell’orizzonte più vasto delle 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">questioni sociali</rs>, altre far scendere nelle minute analisi di 
+                     
+                     <br>
+                     ordine amministrativo, sottraendone una sempre maggior 
+                     
+                     <br>
+                     quantità a quella mistica scaltrezza sentenziante senza mo-
+                     
+                     <br>
+                     tivi, facile maschera all’
+                     <rs data-type="verbum">arbitrio</rs>, nella quale quasi supersti-
+                     
+                     <br>
+                     ziosamente si credette talvolta racchiusa tutta la 
+                     <rs data-type="verbum">sapienza</rs>
+                     
+                     <br>
+                     del 
+                     <orgName>governo</orgName>. Basta riflettere un momento alla importanza 
+                     
+                     <br>
+                     di quella elaborazione, per rallegrarsi dei frutti che essa 
+                     
+                     <br>
+                     può dare. Ma un altro grande lavorìo, altrettanto fecondo 
+                     
+                     <br>
+                     di bene, ha potuto operarsi nel nostro paese: ed è il pri-
+                     
+                     <br>
+                     missimo delineamento di un 
+                     <rs data-type="tema">sentimento nazionale</rs>.
+                     
+                     </div>
+                  <div class="ab-block" id="par3-p1"> 
+                     <br>
+                     Nella precipitosa conquista da noi fatta 
+                     <rs data-type="tema">dell’unità, della 
+                        
+                        <br>
+                        libertà e dell’indipendenza</rs> contemporaneamente, egli è certo 
+                     
+                     <br>
+                     che gli entusiasmi facilmente destatisi potevano appena 
+                     
+                     <br>
+                     avere, così per le 
+                     <rs data-type="verbum">speranze</rs> legittime come per le naturali 
+                     
+                     <br>
+                     
+                     <rs data-type="verbum">illusioni</rs>, un fondamento un po’ palpabile e concreto nella 
+                     
+                     <br>
+                     
+                     <rs data-type="verbum">libertà</rs>; l’
+                     <rs data-type="tema">unità</rs> fu realmente una fonte di stupori più o meno 
+                     
+                     <br>
+                     lieti, che condussero alcuni fino al rimpianto. Ma vent’anni 
+                     
+                     <br>
+                     di baratti di guarnigioni d’ un 
+                     <orgName>esercito</orgName> di duecentomila
+                     
+                     <br>
+                     uomini, altrettanti di scambio di 
+                     <orgName>funzionari giudiziari, 
+                        
+                        <br>
+                        amministrativi, finanziari</orgName>, il quadruplicarsi dei 
+                     <rs data-type="tema">mezzi di 
+                        
+                        <br>
+                        comunicazione</rs> e, aggiungiamolo pure, il 
+                     <rs data-type="tema">viaggio della ca-
+                        
+                        <br>
+                        pitale dal nord al sud</rs> per oltre mezza la lunghezza di un 
+                     
+                     <br>
+                     paese che è quasi tutto lunghezza, hanno necessariamente 
+                     
+                     <br>
+                     sia nel campo fisiologico sia in quello morale operato rav-
+                     
+                     <br>
+                     vicinamenti e creato vincoli: ne sorgono quindi infinite ri-
+                     
+                     </div>
+                  <div class="ab-block" id="par3-p1.2"> 
+                     <br>
+                     percussioni e diffusioni d’
+                     <rs data-type="verbum">idee</rs> e di sentimenti le quali favo-
+                     
+                     <br>
+                     riscono una certa assimilazione fra le varie parti del paese, 
+                     
+                     <br>
+                     così da fornire le prime condizioni allo svolgimento di un 
+                     
+                     <br>
+                     vero e proprio 
+                     <rs data-type="tema">sentimento nazionale</rs>, pur senza impedire 
+                     
+                     <br>
+                     che dalla sventura stessa delle antiche divisioni d'
+                     <placeName>Italia</placeName> si 
+                     
+                     <br>
+                     tragga, per la varietà di attitudini che esse produssero 
+                     
+                     <br>
+                     quasi l’abbozzo di una divisione di lavoro suggerita dalla 
+                     
+                     <br>
+                     storia. Perfino il fatto, prodotto da dieci anni di residenza 
+                     
+                     <br>
+                     a 
+                     <placeName>Roma</placeName>, di metterci inevitabilmente a faccia a faccia con 
+                     
+                     <br>
+                     il 
+                     <orgName>papato</orgName>, e radicare e diffondere la persuasione che, anche 
+                     
+                     <br>
+                     in 
+                     <placeName>Italia</placeName> s’avvicina l’ora di affrontare il 
+                     <rs data-type="tema">problema reli-
+                        
+                        <br>
+                        gioso</rs> facendola finita con il girargli intorno, perfino questo 
+                     
+                     <br>
+                     fatto gioverà alla formazione di una 
+                     <rs data-type="tema">coscienza nazionale</rs>. 
+                     
+                     <br>
+                     E questa sarà immensa fortuna per l'
+                     <placeName>Italia</placeName>: poiché, l’an-
+                     
+                     <br>
+                     tagonismo sollevatosi, non è gran tempo, fra il 
+                     <rs data-type="tema">settentrione 
+                        
+                        <br>
+                        e il mezzogiorno d’
+                        <placeName>Italia</placeName>
+                     </rs>, che abbiamo notato più volte 
+                     
+                     <br>
+                     con dolore e sdegno, non era che un sintomo di un senti-
+                     
+                     <br>
+                     mento pur troppo più profondo: e questo non solo bisogna 
+                     
+                     <br>
+                     estinguere, ma sostituirvi una forte e cordiale 
+                     <rs data-type="verbum">solidarietà</rs>, 
+                     
+                     <br>
+                     in cui le provincie felici e preminenti si persuadano che il 
+                     
+                     <br>
+                     ricordo dei <span class="choice correzione" id="d1e1627"><span class="sic visible">benefizi</span><span class="corr hidden" style="color: red;">benefici</span></span> sulle labbra del benefattore avvilisce il 
+                     
+                     <br>
+                     beneficato o affida il 
+                     <rs data-type="tema">risorgimento</rs> di esso al dispetto e 
+                     
+                     <br>
+                     all’odio, laddove la tacita perseveranza nel <span class="choice correzione" id="d1e1639"><span class="sic visible">benefizio</span><span class="corr hidden" style="color: red;">beneficio</span></span> (che 
+                     
+                     <br>
+                     come opera patriottica non è niente più che un dovere) su-
+                     
+                     <br>
+                     scita pure un palpito di gratitudine che gli rinfonde coraggio 
+                     
+                     <br>
+                     e lo redime nell’amore.
+                     
+                     </div>
+                  <div class="ab-block" id="par4-p1"> 
+                     <br>
+                     Il sano 
+                     <rs data-type="verbum">concetto</rs> del 
+                     <rs data-type="tema">libero regime</rs> e il 
+                     <rs data-type="tema">sentimento nazio-
+                        
+                        <br>
+                        nale</rs> sono senza dubbio due forze preziose anzi capitali 
+                     
+                     <br>
+                     per la vita di un paese, e noi dobbiamo adoperarci con ogni 
+                     
+                     <br>
+                     sforzo per giungere a possederle in altissimo grado. Ora 
+                     
+                     <br>
+                     nella via del loro acquisto l’allargamento del 
+                     <rs data-type="tema">suffragio</rs>, che 
+                     
+                     <br>
+                     l’anno prossimo ci promette, può essere un grande passo 
+                     
+                     <br>
+                     <span class="choice correzione" id="d1e1680"><span class="sic visible">innanzi</span><span class="corr hidden" style="color: red;">avanti</span></span>, o un gravissimo passo indietro. Da chi principal-
+                     
+                     <br>
+                     mente dipende il fare sia l’una, o l’altra cosa? Da quella 
+                     
+                     <br>
+                     ristretta classe che da sola costituisce o domina il presente 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">corpo elettorale</rs>. Se la riforma sarà compiuta con 
+                     <rs data-type="verbum">sincerità</rs>,
+                     
+                     <br>
+                     mantenuta lealmente in tutte le sue conseguenze, le classi
+                     
+                     <br>
+                     ultime arrivanti potranno in breve e facilmente partecipare 
+                     
+                     <br>
+                     del <span class="choice correzione" id="d1e1705"><span class="sic visible">benefizio</span><span class="corr hidden" style="color: red;">beneficio</span></span> di quelle due forze preziose e accrescerlo, e
+                     
+                     <br>
+                     sarà minimo il danno delle delusioni che quelle classi po-
+                     
+                     <br>
+                     tranno forse avere alla lor volta. Ma se invece il grande 
+                     
+                     <br>
+                     atto sarà fin dal principio viziato da restrizioni mentali,
+                     
+                     <br>
+                     da diffidenze, se disgraziatamente prevalga il consiglio di 
+                     
+                     <br>
+                     coloro i quali, di un serio allargamento del 
+                     <rs data-type="tema">suffragio</rs> avendo 
+                     
+                     <br>
+                     paura, di combatterlo apertamente non avendo coraggio, non 
+                     
+                     <br>
+                     saprebbero sfuggire al bivio dello debolezze che per il sen-
+                     
+                     <br>
+                     tiero della 
+                     <rs data-type="verbum">viltà</rs> e farebbero volentieri un’apparenza di 
+                     <rs data-type="tema">ri-
+                        
+                        <br>
+                        forma</rs>, in fondo inefficace, anche a costo di tradire quelle 
+                     
+                     <br>
+                     classi di cui si mostra di <span class="choice correzione" id="d1e1741"><span class="sic visible">pigliare</span><span class="corr hidden" style="color: red;">prendere</span></span> tenera cura; oppure se, 
+                     
+                     <br>
+                     attuata di buona o malavoglia la 
+                     <rs data-type="tema">riforma</rs>, in seguito le classi 
+                     
+                     <br>
+                     più colte ed agiate, non riconoscendo la legittimità e l’ine-
+                     
+                     <br>
+                     luttabilità dei fatti avvenuti, vorranno tenere il bron-
+                     
+                     <br>
+                     cio e non sapranno slanciarsi risolutamente nell’agone,
+                     
+                     <br>
+                     prendendo parte attiva e leale ad ogni ramo della 
+                     <rs data-type="tema">vita pub-
+                        
+                        <br>
+                        blica</rs>, e dimostrando alle classi inferiori che esse non sono 
+                     
+                     <br>
+                     animate da altro 
+                     <rs data-type="verbum">desiderio</rs> che l’
+                     <rs data-type="tema">interesse generale</rs>, e che 
+                     
+                     <br>
+                     la loro 
+                     <rs data-type="tema">preminenza sociale</rs> è di garanzia <span class="choice correzione" id="d1e1779"><span class="sic visible">eguale</span><span class="corr hidden" style="color: red;">uguale</span></span> per tutti; 
+                     
+                     <br>
+                     in tal caso non si farà che accrescere la confusione e il 
+                     
+                     <br>
+                     malcontento, e si rinfocoleranno le 
+                     <orgName>sètte sovversive</orgName>, e si
+                     
+                     <br>
+                     finiranno di screditare le 
+                     <orgName>istituzioni</orgName>.
+                     
+                     </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="image"><img src="img/patria2.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-patria2"><map name="map-patria2"><area shape="rect" coords="42,42,278,151" href="#par5-p2" alt="link to par5-p2"><area shape="rect" coords="39,149,278,324" href="#par6-p2" alt="link to par6-p2"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="par5-p2">
+                     
+                     <br>
+                     Altri gravi argomenti verranno in discussione, secondo 
+                     
+                     <br>
+                     ciò che si spera o si presume, nel prossimo anno: cioè l'
+                     <rs data-type="tema">abo-
+                        
+                        <br>
+                        lizione del corso forzato</rs>, e forse la 
+                     <rs data-type="tema">riforma amministrativa
+                        
+                        <br>
+                        con la questione delle finanze comunali</rs>. La prima, fatta 
+                     
+                     <br>
+                     con energia e ponderatamente, è destinata a risanare la 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">vita economica della nazione</rs>; la seconda aiuterà anche a 
+                     
+                     <br>
+                     perfezionare il giusto 
+                     <rs data-type="verbum">concetto</rs> delle 
+                     <rs data-type="tema">funzioni pubbliche</rs>, con-
+                     
+                     <br>
+                     dannerà le ingenerose leggerezze con cui si fa assegnamento 
+                     
+                     <br>
+                     sui venturi <span class="choice correzione" id="d1e1836"><span class="sic visible">nepoti e pronepoti</span><span class="corr hidden" style="color: red;">nipoti e pronipoti</span></span>, illuminerà la 
+                     <rs data-type="verbum">solidarietà</rs>
+                     
+                     <br>
+                     che lega le generazioni passate alle future, rinvigorendo il 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">sentimento della responsabilità</rs>.
+                     
+                     </div>
+                  <div class="ab-block" id="par6-p2">
+                     <br>
+                     Tali sono i problemi che ci si affacciano nell'anno in cui 
+                     
+                     <br>
+                     entriamo, e noi facciamo voti perchè alla loro soluzione rivol-
+                     
+                     <br>
+                     gano tutta la loro energia, tutto il loro ingegno, i nostri uo-
+                     
+                     <br>
+                     mini di 
+                     <orgName>Stato</orgName>, qualunque sia il 
+                     <orgName>partito</orgName> a cui si trovano 
+                     
+                     <br>
+                     ascritti. E nello studio di questi problemi come pure nello
+                     
+                     <br>
+                     
+                     <rs data-type="verbum">spirito</rs> di tutta la
+                     <rs data-type="tema">vita pubblica</rs> occorre che si continui 
+                     
+                     <br>
+                     attivamente un 
+                     <rs data-type="tema">progresso</rs>, appena cominciato, che tale 
+                     
+                     <br>
+                     vita deve <span class="choice correzione" id="d1e1886"><span class="sic visible">intieramente</span><span class="corr hidden" style="color: red;">interamente</span></span> trasformare, portando quella rigo-
+                     
+                     <br>
+                     rosa compiutezza di cognizione dei fatti sociali d'ogni or-
+                     
+                     <br>
+                     dine, della quale le nostre inchieste sono la negazione, so-
+                     
+                     <br>
+                     stituendo il disinteresse e l'oggettività negli intendimenti 
+                     
+                     <br>
+                     alle 
+                     <rs data-type="verbum">ambizioni</rs> sfrenate e alle rapacità di cui abbiamo troppi 
+                     
+                     <br>
+                     esempi, opponendo la 
+                     <rs data-type="verbum">sincerità</rs> delle opinioni alle furberie 
+                     
+                     <br>
+                     da giocoliere, ed elevando il coraggio della parola; <span class="choice correzione" id="d1e1910"><span class="sic visible">coi</span><span class="corr hidden" style="color: red;">con i</span></span> quali 
+                     
+                     <br>
+                     mezzi soltanto potremo respingere l'accusa, troppo prima 
+                     
+                     <br>
+                     d'ora meritata, di soddisfare a mire vane o egoistiche, mentre 
+                     
+                     <br>
+                     ci si dà l'aria di governare. Provvedendo a bisogni male intesi 
+                     
+                     <br>
+                     d'un popolo decantato a comodo e punto conosciuto sul serio.
+                     </div>
+               </div>
+            </div>
+         </section>
+         <section id="delfo">
+            <div class="page">
+               <div class="image"><img src="img/delfo1.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-oracolo1"><map name="map-oracolo1"><area shape="rect" coords="70,209,187,223" href="#tit-del1" alt="link to tit-del1"><area shape="rect" coords="14,221,243,359" href="#par1-d1" alt="link to par1-d1"><area shape="rect" coords="13,367,245,667" href="#par2-d1" alt="link to par2-d1"><area shape="rect" coords="16,666,244,690" href="#par3-d1" alt="link to par3-d1"><area shape="rect" coords="247,41,475,299" href="#par3-d1.2" alt="link to par3-d1.2"><area shape="rect" coords="246,300,475,329" href="#par4-d1" alt="link to par4-d1"><area shape="rect" coords="248,329,477,454" href="#dialogo1" alt="link to dialogo1"><area shape="rect" coords="249,454,478,559" href="#par5-d1" alt="link to par5-d1"><area shape="rect" coords="248,561,481,599" href="#dialogo2" alt="link to dialogo2"><area shape="rect" coords="246,599,482,687" href="#par6-d1" alt="link to par6-d1"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="tit-del1">
+                     
+                     <br>
+                     ORACOLO DI DELFO
+                     
+                     </div>
+                  <div class="ab-block" id="par1-d1">
+                     <br>
+                     Questa storia non è mia. L’ho intesa narrare tanti anni 
+                     
+                     <br>
+                     fa e me la son fatta ripetere più volte. Mi ricordo: bam-
+                     
+                     <br>
+                     bina ancora, prendevo uno sgabellino e mi sedevo presso 
+                     
+                     <br>
+                     la mamma mia, appoggiandole il capo sulle ginocchia, men-
+                     
+                     <br>
+                     tre la sua bella e delicata mano carezzava gl’indomiti ca-
+                     
+                     <br>
+                     pelli della mia testa selvaggia. Così, nei pomeriggi del-
+                     
+                     <br>
+                     l’estate e nelle serate d’inverno, ella amava narrare, io 
+                     
+                     <br>
+                     <span class="choice correzione" id="d1e1954"><span class="sic visible">amava</span><span class="corr hidden" style="color: red;">amavo</span></span> ascoltare le storie della nostra 
+                     <placeName>Grecia</placeName>, cui ci pun-
+                     
+                     <br>
+                     geva il cuore una lunga 
+                     <rs data-type="tema">nostalgia</rs>: lei, una 
+                     <rs data-type="tema">nostalgia</rs>: piena 
+                     
+                     <br>
+                     di malinconici 
+                     <rs data-type="tema">rimpianti</rs>, io, una 
+                     <rs data-type="tema">nostalgia</rs> piena di gaie 
+                     
+                     <br>
+                     speranze. Le 
+                     <rs data-type="verbum">speranze</rs> sono <span class="choice correzione" id="d1e1986"><span class="sic visible">ite</span><span class="corr hidden" style="color: red;">andate</span></span> come i 
+                     <rs data-type="tema">rimpianti</rs> — la mam-
+                     
+                     <br>
+                     ma non ci è più — e di tutto questo passato, non riman-
+                     
+                     <br>
+                     gono che le storielle di 
+                     <placeName>Grecia</placeName>, più nel cuore che nella 
+                     
+                     <br>
+                     mente. Questa qui, come le altre, è vera.
+                     
+                     <br> 
+                     </div>
+                  <div class="ab-block" id="par2-d1">
+                     <br>
+                     A 
+                     <placeName>Delfo</placeName> non sale più sul tripode la 
+                     <persName data-type="reale">Pizia</persName>, a torcersi 
+                     
+                     <br>
+                     nelle convulsioni del Nume che la investe; non accorrono 
+                     
+                     <br>
+                     da tutte le parti della 
+                     <placeName>Grecia</placeName> coloro che ne desiderano i 
+                     
+                     <br>
+                     responsi. Tutto tace a 
+                     <placeName>Delfo</placeName>; il tempio è in rovina; sul 
+                     
+                     <br>
+                     
+                     <geogName>monte Parnaso</geogName> il pastore romelico conduce a pascolare le
+                     
+                     <br>
+                     capre; 
+                     <persName data-type="immaginario">Apollo</persName> è morto. La campagna fiorisce attorno, ma-
+                     
+                     <br>
+                     linconica. Vi è il silenzio grande delle grandi solitudini. 
+                     
+                     <br>
+                     Nel cielo puro si profila nettamente la linea svelta di una 
+                     
+                     <br>
+                     colonna infranta e la curva molle di un mezzo arco di 
+                     
+                     <br>
+                     marmo. Nell’ora del tramonto, una luce rosea molto viva
+                     
+                     <br>
+                     illumina quelle rovine che paion quasi sollevarsi, rinascere 
+                     
+                     <br>
+                     nell’aere sereno; ma presto il roseo muore nel violetto, il vio-
+                     
+                     <br>
+                     letto nel bigio, il bigio nel nero o la notte immensa stellata
+                     
+                     <br>
+                     sta sul tempio distrutto di 
+                     <placeName>Delfo</placeName>. Nella loro immobilità non
+                     
+                     <br> 
+                     piangono le cose, ma sono mute, raccolte e tristi. Malgrado 
+                     
+                     <br>
+                     la rovina, ancora in un angolo del tempio vi è un’eco so-
+                     
+                     <br>
+                     nora; accanto al tempio, sulla cima dell’erta, si dirupa un 
+                     
+                     <br>
+                     precipizio, una voragine profonda. Per tutto questo non 
+                     
+                     <br>
+                     mancano a 
+                     <placeName>Delfo</placeName> i visitatori, per lo più forestieri: nella 
+                     
+                     <br>
+                     primavera e nell’autunno si è certi di trovarvi quasi sem-
+                     
+                     <br>
+                     pre una compagnia allegra di Francesi, Greci, Italiani che 
+                     
+                     <br>
+                     fanno colazione sull’erba; oppure due o tre inglesi, se-
+                     
+                     <br>
+                     veri e taciturni frequentatori di monumenti caduti. Ed è 
+                     
+                     <br>
+                     anche facile trovarvi qualche vagabondo pensatore, fronte 
+                     
+                     <br>
+                     pallida, occhio immoto, che medita e di nulla si accorge.
+                     
+                     <br>
+                     Ma come l’età nostra è spensierata, così è più facile udire 
+                     
+                     <br>
+                     risa graziose di giovanetto eleganti e strilletti di signore, 
+                     
+                     <br>
+                     spaventate dal precipizio. Di queste profanazioni le rovine 
+                     
+                     <br>
+                     del tempio e l’abisso e il 
+                     <geogName>monte Parnaso</geogName> e la campagna 
+                     
+                     <br>
+                     non si curano e <span class="choice correzione" id="d1e2114"><span class="sic visible">serbano</span><span class="corr hidden" style="color: red;">conservano</span></span> la loro grand’aria antica e di-
+                     
+                     <br>
+                     gnitosa.
+                     </div>
+                  <div class="ab-block" id="par3-d1">
+                     <br>
+                     Anche quei due che vi salirono quel giorno non avevano 
+                     
+                     <br>
+                     il rispetto dell’
+                     <rs data-type="tema">antichità</rs> e nulla, nulla <span class="choice correzione" id="d1e2130"><span class="sic visible">dattorno</span><span class="corr hidden" style="color: red;">intorno</span></span> li commo-
+                     
+                     </div>
+                  <div class="ab-block" id="par3-d1.2">
+                     <br>
+                     veva. La storia del 
+                     <rs data-type="tema">passato</rs> era loro indifferente; troppo li 
+                     
+                     <br>
+                     agitava quella del presente. Lui, 
+                     <persName data-type="immaginario">Roberto</persName>, un italiano, amava 
+                     
+                     <br>
+                     con la profondità e la tenacia di una natura forte e gio-
+                     
+                     <br>
+                     vane, e non era amato. Lei, 
+                     <persName data-type="immaginario">Cariclea</persName>, una greca, si com-
+                     
+                     <br>
+                     piaceva di 
+                     <rs data-type="tema">essere amata e di non amare</rs>, con la delicata 
+                     
+                     <br>
+                     ferocia di un’anima giovane e arida. Si erano conosciuti al 
+                     
+                     <br>
+                     
+                     <placeName>Pireo</placeName>, in un ballo che la corazzata italiana dove Roberto era 
+                     
+                     <br>
+                     ufficiale, dava alle belle signore ateniesi — e lui s’era preso 
+                     
+                     <br>
+                     d’
+                     <rs data-type="tema">amore</rs> per quella figura slanciata, per quegli occhi bruni
+                     
+                     <br>
+                     e pieni di mistero, per quel profilo tranquillo, simile a quello 
+                     
+                     <br>
+                     della 
+                     <addName>Pallade Atenea</addName>, deità saggia e riflessiva che non ha 
+                     
+                     <br>
+                     mai amato. Ma la fiamma di questo amore non lambì nep-
+                     
+                     <br>
+                     pure le dita di 
+                     <persName data-type="immaginario">Cariclea</persName> e il freddo cuore rimase avvolto
+                     
+                     <br>
+                     nella sua freddezza, mentre la bocca sorrideva e lo sguardo 
+                     
+                     <br>
+                     lusingava. L’italiano soffriva talvolta più del sorriso che 
+                     
+                     <br>
+                     della freddezza, ma non disperava. I cuori buoni ed onesti 
+                     
+                     <br>
+                     non disperano mai, credono nell’ affetto vincitore, credono 
+                     
+                     <br>
+                     nei trionfi dell’
+                     <rs data-type="tema">amore</rs>. Per qualche tempo  
+                     <persName data-type="immaginario">Roberto</persName> credette
+                     
+                     <br>
+                     che tanto alta sarebbe stata la voce della sua passione da 
+                     
+                     <br>
+                     penetrare nell’ anima di 
+                     <persName data-type="immaginario">Cariclea</persName>; ma questa speranza de-
+                     
+                     <br>
+                     clinava poco a poco. Lei non sapeva, 
+                     <rs data-type="tema">non voleva o non po-
+                        
+                        <br>
+                        teva amare</rs>: sapeva sorridere e mettere l’
+                     <rs data-type="tema">amore</rs> negli altri 
+                     
+                     <br>
+                     col suo sorriso. Il giovane si faceva cupo; parole d’ira gli 
+                     
+                     <br>
+                     venivano alle labbra. Lei si stringeva nelle spalle, con un 
+                     
+                     <br>
+                     moto di disprezzo: lui chiedeva perdono, piangeva, s’umi-
+                     
+                     <br>
+                     liava, nell’eterna e sempre nuova 
+                     <rs data-type="tema">tragedia dell’amore</rs>. Pas-
+                     
+                     <br>
+                     sava il tempo, ma il 
+                     <rs data-type="verbum">destino</rs> di 
+                     <persName data-type="immaginario">Roberto</persName> rimaneva immobile.
+                     
+                     </div>
+                  <div class="ab-block" id="par4-d1">
+                     <br>
+                     Una sera egli andò a casa di 
+                     <persName data-type="immaginario">Cariclea</persName>, pallido, torvo, si-
+                     
+                     <br>
+                     lenzioso. Non parve vedere il grazioso saluto d’accoglienza,
+                     
+                     <br>
+                     non sentì la stretta di mano. Sedettero.
+                     
+                     </div>
+                  <div class="ab-block" id="dialogo1">
+                     <br> 
+                     <span class="q-spoken">—  Bisogna che io sappia la vostra decisione  —</span>  disse lui,
+                     
+                     <br> 
+                     improvvisamente. 
+                     
+                     <br>
+                     <span class="q-spoken">—  Quale? </span> chiese lei, ridendo. 
+                     
+                     <br> 
+                     <span class="q-spoken">— Non ridete. Noi partiamo fra tre giorni.</span>
+                     
+                     <br>
+                     <span class="q-spoken">—  Tanto peggio — tanto meglio. </span>
+                     
+                     <br> 
+                     <span class="q-spoken">—  Voi non mi lascerete partire disperato.</span>
+                     
+                     <br>
+                     <span class="q-spoken">—  Bah! voi dimenticherete, in 
+                        <placeName>Italia</placeName>.</span>
+                     
+                     <br>
+                     <span class="q-spoken">—  Dite piuttosto che non partirò.</span>
+                     
+                     <br>
+                     Tacquero. Ella pensava.
+                     
+                     <br>
+                     <span class="q-spoken">—  Andiamo a 
+                        <placeName>Delfo</placeName>, domani  —</span> disse lei, dopo un mo-
+                     
+                     <br> 
+                     mento.
+                     
+                     <br>
+                     <span class="q-spoken">— A far che?</span>
+                     
+                     <br>  
+                     <span class="q-spoken">— A consultare l’oracolo. Risponderà lui per me.</span>
+                     
+                     </div>
+                  <div class="ab-block" id="par5-d1">
+                     <br>
+                     Egli chinò il capo, confortato da una vaga 
+                     <rs data-type="verbum">speranza</rs>. In-
+                     
+                     <br>
+                     fine avrebbe saputo. E se 
+                     <persName data-type="immaginario">Cariclea</persName> avesse voluto dire no, 
+                     
+                     <br>
+                     poteva decidersi subito. Chissà! <span class="choice correzione" id="d1e2348"><span class="sic visible">ha</span><span class="corr hidden" style="color: red;">Ha</span></span> strane debolezze il cuore 
+                     
+                     <br>
+                     della donna. E il viaggio fu allegro abbastanza. Ogni tanto 
+                     
+                     <br>
+                     però 
+                     <persName data-type="immaginario">Roberto</persName> era preso da un terrore indefinito e taceva.
+                     
+                     <br>
+                     Lassù, lassù dove andavano, era lo scopo della sua vita: quel 
+                     
+                     <br>
+                     <em>lassù</em> era avvolto nello nebbie di un oracolo pauroso. Ma ella
+                     
+                     <br> 
+                     parlava, scintillavano i suoi occhi e 
+                     <persName data-type="immaginario">Roberto</persName> <span class="choice correzione" id="d1e2375"><span class="sic visible">obbliava</span><span class="corr hidden" style="color: red;">dimenticava</span></span>. Sali-
+                     
+                     <br>
+                     rono per l’erta. Poco a poco l’allegria era caduta. Visitarono 
+                     
+                     <br>
+                     le rovine, aggirandosi fra le alte erbe, guardando attorno 
+                     
+                     <br>
+                     con indifferenza, spettatori inconsci.
+                     
+                     </div>
+                  <div class="ab-block" id="dialogo2">
+                     <br> 
+                     <span class="q-spoken">—  Era qui, il tripode...  —</span> mormorò lei, sottovoce.
+                     
+                     <br>
+                     <span class="q-spoken">— Volete voi dunque consultare l’oracolo?  —</span> chiese lui, 
+                     
+                     <br> 
+                     preso da una grande angoscia.
+                     
+                     <br>
+                     <span class="q-spoken">—  Sì. Allontanatevi, passeggiate. Io resto qui. </span>
+                     </div>
+                  <div class="ab-block" id="par6-d1">
+                     <br>
+                     Lui errò intorno al tempio, senza sentire niente, paren-
+                     
+                     <br>
+                     dogli di essere all’ 
+                     <rs data-type="verbum">agonia</rs>. Rasentò il precipizio, ma senz’oc-
+                     
+                     <br>
+                     cuparsene, fissandovi uno sguardo incerto. Quanto tempo 
+                     
+                     <br>
+                     trascorse così? Parve a lui tanto, tanto tempo: finalmente 
+                     
+                     <br>
+                     la vide venire di lontano, quieta e serena. Così, in quel pae-
+                     
+                     <br>
+                     saggio grandioso e muto, accanto a quelle sacre rovine,
+                     
+                     <br>
+                     ella rassomigliava sempre più alla 
+                     <addName>Pallade Atenea</addName>, 
+                     <addName>la ver-
+                        
+                        <br>
+                        gine senz’amore</addName>. E lui fu invaso dalla vigliaccheria di non 
+                     
+                     <br>
+                     voler saper nulla, di non voler soffrire. Passeggiarono in-
+                     
+                     </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="image"><img src="img/delfo2.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-oracolo2"><map name="map-oracolo2"><area shape="rect" coords="21,41,251,74" href="#par6-d1.2" alt="link to par6-d1.2"><area shape="rect" coords="23,73,251,120" href="#dialogo3" alt="link to dialogo3"><area shape="rect" coords="19,120,252,183" href="#par7-d2" alt="link to par7-d2"><area shape="rect" coords="25,185,256,685" href="#par8-d2" alt="link to par8-d2"><area shape="rect" coords="253,44,480,100" href="#par8-d2.2" alt="link to par8-d2.2"><area shape="rect" coords="255,103,477,120" href="#dialogo4" alt="link to dialogo4"><area shape="rect" coords="255,122,479,167" href="#par9-d2" alt="link to par9-d2"><area shape="rect" coords="254,168,481,197" href="#dialogo5" alt="link to dialogo5"><area shape="rect" coords="254,197,482,322" href="#par10-d2" alt="link to par10-d2"><area shape="rect" coords="256,331,482,361" href="#par11-d2" alt="link to par11-d2"><area shape="rect" coords="259,359,483,390" href="#dialogo6" alt="link to dialogo6"><area shape="rect" coords="254,390,480,438" href="#par12-d2" alt="link to par12-d2"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="par6-d1.2">
+                     
+                     <br>
+                     sieme, accanto, lungo la voragine: ogni tanto 
+                     <persName data-type="immaginario">Cariclea</persName> vi
+                     
+                     <br>
+                     guardava dentro, tranquillamente. Egli alla fine, preso da 
+                     
+                     <br>
+                     un subitaneo coraggio :
+                     
+                     </div>
+                  <div class="ab-block" id="dialogo3">
+                     <br> 
+                     <span class="q-spoken">—  Ebbene? </span> chiese.
+                     
+                     <br>
+                     
+                     <persName data-type="immaginario">Cariclea</persName> lo fissò e senz’esitare :
+                     
+                     <br>
+                     <span class="q-spoken">—  No  —</span> rispose.
+                     
+                     <br>
+                     Egli si guardò attorno, smarrito, cieco.
+                     
+                     <br>
+                     <span class="q-spoken">—  No, no  —</span> ripetette lei, con la sua voce dura.
+                     
+                     </div>
+                  <div class="ab-block" id="par7-d2">
+                     <br>
+                     E la lunga eco sonora ripetette quel <em>no</em> fra gli archi, 
+                     
+                     <br>
+                     le colonne e le finestre. 
+                     <persName data-type="immaginario">Roberto</persName> rimase immobile; poi come 
+                     
+                     <br>
+                     una statua scossa dalla base, traballò, si rovesciò indietro 
+                     
+                     <br>
+                     e cadde nel precipizio, con un alto grido di dolore. Ella 
+                     
+                     <br>
+                     fuggì, inorridita, chiudendo gli occhi, turandosi le orecchie, 
+                     
+                     <br>
+                     mordendosi le labbra per non urlare.
+                     
+                     <br> 
+                     
+                     </div>
+                  <div class="ab-block" id="par8-d2">
+                     <br>
+                     Per tempo che passasse, 
+                     <persName data-type="immaginario">Cariclea</persName> aveva negli occhi la 
+                     
+                     <br>
+                     visione spaventosa. Tutta la sua fibra femminile n’era stata 
+                     
+                     <br>
+                     scossa; non sognava che voragini senza fondo e un corpo 
+                     
+                     <br>
+                     che precipita, agitando le sue braccia nel vuoto. Si sve-
+                     
+                     <br>
+                     gliava di soprassalto, ansante, coperta di sudore, soffocando
+                     
+                     <br>
+                     le sue grida nel lenzuolo. Non si era mai curata del vivo 
+                     
+                     <br>
+                     ed ora il morto era con lei in tutte le ore, nella veglia e 
+                     
+                     <br>
+                     nel sonno. Era il suo incubo, la sua malattia, il morbo della 
+                     
+                     <br>
+                     sua 
+                     <rs data-type="verbum">fantasia</rs> inferma. La sua 
+                     <rs data-type="verbum">pace</rs> era perduta, per sempre ; 
+                     
+                     <br>
+                     era svanita la divina 
+                     <rs data-type="verbum">serenità</rs> del suo 
+                     <rs data-type="verbum">spirito</rs>. <span class="choice correzione" id="d1e2543"><span class="sic visible">Obliare</span><span class="corr hidden" style="color: red;">Dimenticare</span></span> non 
+                     
+                     <br>
+                     poteva. Tutta la scena, nella sua crudele rapidità, ondeg-
+                     
+                     <br>
+                     giava nella sua stanza, ai passeggi, ai teatri, sempre pre-
+                     
+                     <br>
+                     sente. Ella non aveva parlato con nessuno di quella 
+                     <rs data-type="tema">morte</rs>, 
+                     
+                     <br>
+                     colta dalla paura. Non poteva esprimere nelle parole quello 
+                     
+                     <br>
+                     che aveva visto, temendo dar troppa vita ai suoi fantasmi, 
+                     
+                     <br>
+                     come colui che non narra il 
+                     <rs data-type="verbum">sogno</rs>, per non sognarlo di 
+                     
+                     <br>
+                     nuovo. Un grande disgusto della vita passata la prendeva ; 
+                     
+                     <br>
+                     e le feste, i balli, non l’attiravano più. La sua vita si fa-
+                     
+                     <br>
+                     ceva solitaria, la sua casa deserta. Ella camminava come 
+                     
+                     <br>
+                     un’ombra nei suoi saloni vuoti, vestita di nero, non osando 
+                     
+                     <br>
+                     più portare i colori della gaiezza, pensando a quell’orribile 
+                     
+                     <br>
+                     corpo sfracellato che giaceva in fondo al precipizio, <span class="choice correzione" id="d1e2581"><span class="sic visible">donde</span><span class="corr hidden" style="color: red;">dove</span></span> 
+                     
+                     <br>
+                     nessuno, nessuno aveva avuto la pietà di ritrarlo per dar-
+                     
+                     <br>
+                     gli benedetta sepoltura. A poco a poco, come la sua mente 
+                     
+                     <br>
+                     si esaltava, ella si metteva ad amare quel morto, con un 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">amore fatto di orgoglio infranto e di rimorso</rs>. 
+                     <persName data-type="immaginario">Roberto</persName> solo, 
+                     
+                     <br>
+                     lui solo era stato buono, generoso e forte: lui solo aveva 
+                     
+                     <br>
+                     saputo amarla bene, amarla sino all’ultimo momento del-
+                     
+                     <br>
+                     l’esistenza: egli aveva saputo morire per quest'
+                     <rs data-type="tema">amore</rs>. Chi,
+                     
+                     <br>
+                     chi farebbe mai lo stesso? Chi sarebbe così onesto, così 
+                     
+                     <br>
+                     appassionato in questo mondo egoista e corrotto? E 
+                     <persName data-type="immaginario">Ro-
+                        
+                        <br>
+                        berto</persName> s’innalzava nel suo cuore, come una figura 
+                     <rs data-type="verbum">ideale</rs> che 
+                     
+                     <br>
+                     ella inchinava e adorava. Lugubri 
+                     <rs data-type="verbum">fantasie</rs> trascinavano 
+                     
+                     <br>
+                     l’anima sua in un lento ed ostinato delirio, il suo 
+                     <rs data-type="tema">amore
+                        
+                        <br>
+                        funebre</rs> sognava la bara comune, l’ultimo e perpetuo ab-
+                     
+                     <br>
+                     bracciamento della tomba. Sì, voleva andare <span class="choice correzione" id="d1e2640"><span class="sic visible">colà</span><span class="corr hidden" style="color: red;">là</span></span>, all’
+                     <rs data-type="tema">oracolo 
+                        
+                        <br>
+                        di Delfo</rs> e chiedere al vento che passava, alle ginestre che 
+                     
+                     <br>
+                     fiorivano, alle pietre imbrunite dal tempo, all’eco, se è bello, 
+                     
+                     <br>
+                     se è santo raggiungere l’amante nella 
+                     <rs data-type="tema">morte</rs>. Quel corpo 
+                     
+                     <br>
+                     in fondo al precipizio l’attirava a se, come per magnetismo : 
+                     
+                     <br>
+                     e quasi le pareva una fulminea ma intensa voluttà, sentirsi 
+                     
+                     <br>
+                     cadere da tanta altezza. Tendeva le braccia, chiudeva gli 
+                     
+                     <br>
+                     occhi, si slanciava... sì, andrebbe <span class="choice correzione" id="d1e2667"><span class="sic visible">colà</span><span class="corr hidden" style="color: red;">là</span></span>, a interrogare l’
+                     <rs data-type="tema">ora-
+                        
+                        <br>
+                        colo</rs>, a morire. A momenti era l’anno dal giorno della 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">morte</rs>; l’anniversario si approssimava. Andrebbe in quel 
+                     
+                     <br>
+                     giorno, in quell’ora, sola. E fu assorbita da questa deci-
+                     
+                     <br> 
+                     sione, immersa nel suo 
+                     <rs data-type="verbum">sogno</rs>, facendo il viaggio senza ac-
+                     
+                     <br>
+                     corgersene, come mossa da una forza interna, guardando 
+                     
+                     <br>
+                     lontano, alla montagna dell’
+                     <rs data-type="tema">oracolo</rs>. Saliva per l’erta che 
+                     
+                     <br>
+                     insieme avevano salita e riviveva la giornata, ogni parola, 
+                     
+                     <br>
+                     ogni sguardo, ogni fermata. Errò nel tempio, come un 
+                     
+                     <br>
+                     fantasma. Quando volle interrogare, nessuno le rispose. 
+                     
+                     </div>
+                  <div class="ab-block" id="par8-d2.2">                 
+                     <br>
+                     Non avevano voce i fiori, i venticelli, i ruderi, gli echi. Tutto
+                     
+                     <br>
+                     era nel silenzio immenso, tutto, tutto. Pensò che 
+                     <persName data-type="immaginario">Apollo</persName> era 
+                     
+                     <br>
+                     morto e che doveva morire anche l’
+                     <rs data-type="tema">amore</rs>: l’
+                     <rs data-type="tema">oracolo</rs> taceva,
+                     
+                     <br>
+                     parlasse il cuore. E affascinata uscì nella via che costeg-
+                     
+                     <br>
+                     giava il precipizio: osò guardare in fondo. Nulla. Guardò 
+                     
+                     <br>
+                     di nuovo. Nulla.
+                     
+                     </div>
+                  <div class="ab-block" id="dialogo4">
+                     
+                     <br>
+                     <span class="q-spoken">— 
+                        <persName data-type="immaginario">Roberto</persName>!</span> gridò. 
+                     
+                     <br>
+                     <span class="q-spoken">—  Eccomi qui </span> disse una voce alle sue spalle.
+                     
+                     </div>
+                  <div class="ab-block" id="par9-d2">
+                     
+                     <br>
+                     Era lui, vivo, bello, gagliardo. Lei svenne. Quando si 
+                     
+                     <br>
+                     riebbe, il sole declinava e si trovò distesa sopra uno scialle, 
+                     
+                     <br>
+                     col capo appoggiato ad una pietra. Lui era accanto a lei.
+                     
+                     <br>
+                     Non dicevano nulla, fissandosi bene, come se non si cono-
+                     
+                     <br>
+                     scessero. 
+                     </div>
+                  <div class="ab-block" id="dialogo5">
+                     <br> 
+                     
+                     
+                     <span class="q-spoken">— Mi raccolse qui, un contadino, un pastore. Sono stato
+                        
+                        <br>
+                        sei mesi ammalato. Vengo d'
+                        <placeName>Italia</placeName>, in pelligrinaggio </span> disse
+                     
+                     <br>
+                     semplicemente lui.
+                     
+                     </div>
+                  <div class="ab-block" id="par10-d2">
+                     <br>
+                     Ella non rispose ; pensava. S’era fatta smorta nei suoi
+                     
+                     <br>
+                     abiti di lutto. Guardava lo sue mani, dove aveva sola-
+                     
+                     <br>
+                     mente un anello che egli le aveva regalato. Pareva traso-
+                     
+                     <br>
+                     gnata, come svegliata bruscamente da un lungo sonno. Si 
+                     
+                     <br>
+                     passò duo o tre volte una mano sulla fronte. 
+                     <persName data-type="immaginario">Roberto</persName> era 
+                     
+                     <br>
+                     calmo. Veniva la sera. Si alzarono, quasi mossi dal mede-
+                     
+                     <br>
+                     simo 
+                     <rs data-type="verbum">pensiero</rs> e partirono senza volgersi indietro, a guar-
+                     
+                     <br>
+                     dare le rovino di 
+                     <placeName>Delfo</placeName> che s’immergevano nella notte. Un 
+                     
+                     <br>
+                     viaggio, non malinconico, non allegro. Evitavano di parlarsi; 
+                     
+                     <br>
+                     guardavano l’uno a dritta, l’altro a mancina. Sulla soglia 
+                     
+                     <br>
+                     della porta non si toccarono la mano, si salutarono quasi 
+                     
+                     <br>
+                     distratti. Non si sposarono, non si cercarono, non si rivi-
+                     
+                     <br>
+                     dero più.
+                     
+                     <br> 
+                     
+                     </div>
+                  <div class="ab-block" id="par11-d2">
+                     <br>
+                     A questo punto finale del racconto, io mi lasciavo vin-
+                     
+                     <br>
+                     cere dal malumore. E volendo forzare la 
+                     <rs data-type="verbum">verità</rs>, esclamavo, 
+                     
+                     <br>
+                     arrabbiandomi, quasi piangendo:
+                     </div>
+                  <div class="ab-block" id="dialogo6">
+                     
+                     <br>
+                     <span class="q-spoken">— O mamma, si sposarono! Dimmi che si sposarono!</span>
+                     
+                     <br>
+                     <span class="q-spoken">— No, non si sposarono.</span>
+                     
+                     <br>
+                     <span class="q-spoken">— E perchè ?</span>
+                     
+                     </div>
+                  <div class="ab-block" id="par12-d2">
+                     
+                     <br>
+                     Lei non mi rispondeva, assorta in un 
+                     <rs data-type="verbum">pensiero</rs> , ed io 
+                     
+                     <br>
+                     non osava chiedere altro. Non capivo perchè non si erano 
+                     
+                     <br>
+                     sposati. Ora lo capisco. L’oracolo di 
+                     <placeName>Delfo</placeName> li aveva egual-
+                     
+                     <br>
+                     mente guariti dall’amore, con la 
+                     <rs data-type="tema">realtà di un’agonia</rs>, col 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">sogno di una morte</rs>. 
+                     
+                     <br>
+                     
+                     <persName data-type="reale">MATILDE SERAO</persName>
+                     </div>
+               </div>
+            </div>
+         </section>
+         <section id="biblio1">
+            <div class="page">
+               <div class="image"><img src="img/bibliografia1.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-edvige"><map name="map-edvige"><area shape="rect" coords="322,408,403,421" href="#tit-biblio" alt="link to tit-biblio"><area shape="rect" coords="260,423,482,443" href="#tit-e" alt="link to tit-e"><area shape="rect" coords="258,447,482,612" href="#par1-e1" alt="link to par1-e1"><area shape="rect" coords="259,613,484,661" href="#par2-e1" alt="link to par2-e1"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="tit-biblio">
+                     
+                     <br>
+                     BIBLIOGRAFIA
+                     </div>
+                  <div class="ab-block" id="tit-e">
+                     <br>
+                     
+                     GIACOMO ZANELLA, 
+                     <rs data-type="opere">Edvige, racconto</rs>. - 
+                     Firenze,  
+                     <span data-type="publisher">G. Barbèra,
+                        
+                        <br>
+                        editore</span>, 
+                     <date>1881</date>.
+                     
+                     
+                     </div>
+                  <div class="ab-block" id="par1-e1">
+                     <br>
+                     Sono due storie intimamente connesse, ma l'una tristis-
+                     
+                     <br>
+                     sima, lieta l'altra. 
+                     <persName data-type="immaginario">Elvira</persName>, 
+                     <addName>bella popolana</addName> di 
+                     <placeName>Palermo</placeName>, ama 
+                     
+                     <br>
+                     
+                     <persName data-type="immaginario">Paolo</persName>, 
+                     <addName>giovane soldato</addName>; questi promette sposarla quando 
+                     
+                     <br>
+                     sarà capitano, e intanto ha da lei una <span class="choice correzione" id="d1e2944"><span class="sic visible">figliuola</span><span class="corr hidden" style="color: red;">figliola</span></span>, 
+                     <persName data-type="immaginario">Edvige</persName>.
+                     
+                     <br>
+                     Divenuto capitano, non mantiene la promessa, anzi, lasciando 
+                     
+                     <br>
+                     la 
+                     <placeName>Sicilia</placeName>, <span class="choice correzione" id="d1e2961"><span class="sic visible">mena</span><span class="corr hidden" style="color: red;">porta</span></span> con sé la <span class="choice correzione" id="d1e2966"><span class="sic visible">figliuola</span><span class="corr hidden" style="color: red;">figliola</span></span>, senza curarsi del do-
+                     
+                     <br>
+                     lore di 
+                     <persName data-type="immaginario">Elvira</persName>. 
+                     <persName data-type="immaginario">Edvige</persName>, a venti anni, diventa maestra in un
+                     
+                     <br>
+                     villaggio del 
+                     <placeName>Veneto</placeName>, dove ama, riamata, il 
+                     <addName>dottor</addName> 
+                     <persName data-type="immaginario">Teobaldo</persName> 
+                     
+                     <br>
+                     - un giovane scettico e dissoluto cui l'
+                     <rs data-type="tema">amore</rs> restituisce 
+                     
+                     <br>
+                     
+                     <rs data-type="verbum">fede</rs> e 
+                     <rs data-type="verbum">bontà</rs>. 
+                     <persName data-type="immaginario">Paolo</persName> consente alle nozze; ma intanto gli 
+                     
+                     <br>
+                     giunge una lettera d'
+                     <persName data-type="immaginario">Elvira</persName> che, presso a 
+                     <rs data-type="tema">morte</rs>, desidera 
+                     
+                     <br>
+                     vedere 
+                     <persName data-type="immaginario">Edvige</persName>, egli corre a 
+                     <placeName>Genova</placeName>, dove la misera s'è re-
+                     
+                     <br>
+                     cata, ma la trova morta - morta in un ospedale. Sulla 
+                     
+                     <br>
+                     tomba di lei, si uccide con un colpo di pistola. Pochi mesi 
+                     
+                     <br>
+                     dopo, 
+                     <persName data-type="immaginario">Edvige</persName>, sposa 
+                     <persName data-type="immaginario">Teobaldo</persName>:
+                     
+                     <br>
+                     <em>
+                        <quote data-type="quote">E gli occhi le imperlava un'ostinata
+                           
+                           <br>
+                           <span class="choice correzione" id="d1e3054"><span class="sic visible">Lagrima</span><span class="corr hidden" style="color: red;">Lacrima</span></span>, se di gioia o di 
+                           <rs data-type="tema">dolore</rs>,
+                           
+                           <br>
+                           Ignoto, non che agli altri, era a lei stessa. </quote></em>
+                     
+                     </div>
+                  <div class="ab-block" id="par2-e1">
+                     <br>
+                     Su questa trama si sarebbe potuto intessere un romanzo, 
+                     
+                     <br>
+                     se all'A. fosse bastata la <span class="choice correzione" id="d1e3071"><span class="sic visible">lena</span><span class="corr hidden" style="color: red;">voglia</span></span> di analizzare caratteri, di di-
+                     
+                     <br>
+                     pingere le fasi di due amori tanto diversi fra loro. Invece 
+                     
+                     <br>
+                     egli ha scritto una breve novella e, quel ch'è peggio, in 
+                     
+                     <br>
+                     versi. La novella, nella sua arida successione di eventi, dei 
+                     
+                     </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="image"><img src="img/bibliografia2.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-edvige2"><map name="map-edvige2"><area shape="rect" coords="28,40,251,168" href="#par2-e1.2" alt="link to par2-e1.2"><area shape="rect" coords="27,168,251,280" href="#par3-e2" alt="link to par3-e2"><area shape="rect" coords="24,280,252,336" href="#par4-e2" alt="link to par4-e2"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="par2-e1.2">
+                     <br>
+                     quali non sono messe in rilievo le cause psicologiche, <span class="choice correzione" id="d1e3089"><span class="sic visible">appa-</span><span class="corr hidden" style="color: red;">appa-</span></span>
+                     
+                     <br>
+                     <span class="choice correzione" id="d1e3096"><span class="sic visible">risce</span><span class="corr hidden" style="color: red;">re</span></span> priva d’originalità: le situazioni, infatti, non essendo 
+                     
+                     <br>
+                     nuove, il merito dello scrittore doveva manifestarsi, se così
+                     
+                     <br>
+                     possiamo dire, nel colorirle a nuovo. La forma poetica mal 
+                     
+                     <br>
+                     risponde al contenuto, poiché nè i personaggi, nè l’azione 
+                     
+                     <br>
+                     si sollevano tanto al disopra del livello ordinario, da richie-
+                     
+                     <br>
+                     derla. Certo, la conversione di 
+                     <persName data-type="immaginario">Teobaldo</persName>, il passaggio dal 
+                     
+                     <br>
+                     suo 
+                     <rs data-type="verbum">scetticismo</rs> di 
+                     <addName>medico materialista</addName> all’amore, alla 
+                     <rs data-type="verbum">fede</rs>, 
+                     
+                     <br>
+                     è un soggetto altamente poetico: ma l’A. ha trascurato di 
+                     
+                     <br>
+                     dipingere la lotta che aﬀerma essersi combattuta in quel 
+                     
+                     <br>
+                     cuore, ha dimenticato di render verosimile la vittoria dei
+                     
+                     <br>
+                     buoni sentimenti in un uomo, il quale
+                     
+                     <br>
+                     <em>
+                        <quote data-type="quote">. . . . . . . . . della vita
+                           
+                           <br>
+                           Altra mercè non <span class="choice correzione" id="d1e3146"><span class="sic visible">attendea</span><span class="corr hidden" style="color: red;">attendeva</span></span> che il nulla.</quote></em>
+                     
+                     </div>
+                  <div class="ab-block" id="par3-e2">
+                     
+                     <br>
+                     Dimenticanza tanto più deplorevole, in quanto 
+                     <persName data-type="immaginario">Edvige</persName> 
+                     
+                     <br>
+                     se ne sta in disparte, non ha alcuna influenza diretta sul 
+                     
+                     <br>
+                     mutamento di colui che l’ama. Messo sullo sdrucciolo, lo 
+                     
+                     <br>
+                     
+                     <persName data-type="reale">Zanella</persName> non si è accorto che, date queste condizioni, il mo-
+                     
+                     <br>
+                     nologo di 
+                     <persName data-type="immaginario">Teobaldo</persName> (pag. 27 e seg.), e il suo improvviso
+                     
+                     <br>
+                     desiderio di darsi la 
+                     <rs data-type="tema">morte</rs> precipitandosi da una rupe 
+                     
+                     <br>
+                     (pag. 37), invece di fare del protagonista un 
+                     <persName data-type="immaginario">Fausto</persName> e un 
+                     
+                     <br>
+                     
+                     <persName data-type="immaginario">Manfredo</persName>, lo rendono ridicolo. Allo stesso modo quel Paolo 
+                     
+                     <br>
+                     che, dopo vent’anni di crudele silenzio, s’uccide sulla tomba 
+                     
+                     <br>
+                     della donna abbandonata, è inverosimile; com’è inverosi-
+                     
+                     <br>
+                     mile che 
+                     <persName data-type="immaginario">Elvira</persName> aspetti vent’anni a mostrarsi <em>
+                        <quote data-type="quote">«impaziente 
+                           
+                           <br>
+                           di più lungo ritardo» </quote></em> (pag. 41).
+                     
+                     </div>
+                  <div class="ab-block" id="par4-e2">
+                     <br>
+                     Altri <span class="choice correzione" id="d1e3215"><span class="sic visible">loderebbe</span><span class="corr hidden" style="color: red;">loderebbero</span></span> le frequenti descrizioni di paesaggi; a 
+                     
+                     <br>
+                     noi rincresce che distraggano l’A. dal suo argomento, più
+                     
+                     <br>
+                     che non dovrebbero. Rispetto alle intenzioni <em>pie</em>, evidentis-
+                     
+                     <br>
+                     sime nel racconto, ed agli attacchi di 
+                     <persName data-type="immaginario">Teobaldo</persName> contro la 
+                     
+                     <br>
+                     scienza moderna, non possiamo che ricordare l’antico: 
+                     
+                     <foreign>
+                        <em>inane
+                           
+                           <br>
+                           telum sine ictu</em>
+                        </foreign>.
+                     </div>
+               </div>
+            </div>
+         </section>
+         <section id="biblio2">
+            <div class="page">
+               <div class="image"><img src="img/bibliografia3.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-ossari"><map name="map-ossari"><area shape="rect" coords="328,167,409,182" href="#tit-biblio2" alt="link to tit-biblio2"><area shape="rect" coords="253,181,486,201" href="#tit-oss" alt="link to tit-oss"><area shape="rect" coords="256,204,483,674" href="#par1-o1" alt="link to par1-o1"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="tit-biblio2">
+                     
+                     <br>
+                     BIBLIOGRAFIA
+                     </div>
+                  <div class="ab-block" id="tit-oss">
+                     <br>
+                     
+                     CESIRA SICILIANI, 
+                     <rs data-type="opere">Una visita agli ossari di San Martino
+                        
+                        
+                        <br>
+                        e Solferino</rs>. - 
+                     Bologna,  
+                     <span data-type="publisher">Nicola Zanichelli</span>, 
+                     <date>MDCCCLXXXI</date>.
+                     
+                     
+                     </div>
+                  <div class="ab-block" id="par1-o1">
+                     <br>
+                     L’autrice descrive una gita ai famosi 
+                     <rs data-type="tema">ossari</rs> fatta da eletta 
+                     
+                     <br>
+                     brigata e narra briosamente le conversazioni, gl’incidenti, 
+                     
+                     <br>
+                     le impressioni della visita e della 
+                     <rs data-type="tema">pia commemorazione</rs> che
+                     
+                     <br>
+                     si celebra il 
+                     <date>24 giugno</date> d’ogni anno a 
+                     <placeName>San Martino</placeName> e a 
+                     <placeName>Sol-
+                        
+                        <br>
+                        ferino</placeName>. Nel primo 
+                     <rs data-type="tema">ossario</rs> sono raccolte le 
+                     <rs data-type="tema">reliquie</rs> degli Ita-
+                     
+                     <br>
+                     liani e degli Austriaci, nel secondo quelle dei Francesi e degli 
+                     
+                     <br>
+                     Austriaci. <em>
+                        <quote data-type="quote"> «Centinaia, migliaia di teschi eccoli tutti lì, di-
+                           
+                           <br>
+                           sposti a un modo, con ordine perfetto, uno accanto all’altro, 
+                           
+                           <br>
+                           uno sopra all’altro, in fila, a strati come i libri in una li-
+                           
+                           <br>
+                           breria.» </quote></em> L’aver espresso i sentimenti che suggerisce simile 
+                     
+                     <br>
+                     spettacolo con naturalezza e con 
+                     <rs data-type="verbum">semplicità</rs> è merito non 
+                     
+                     <br>
+                     comune in 
+                     <placeName>Italia</placeName>; le notizie intorno all’istituzione degli 
+                     <rs data-type="tema">os-
+                        
+                        <br>
+                        sari</rs>, i ricordi della 
+                     <rs data-type="tema">battaglia</rs>, e vari episodi che vi si rife-
+                     
+                     <br>
+                     riscono, vengono raccontati di mano in mano che lo porta 
+                     
+                     <br>
+                     il libero andamento del dialogo. Il tutto è condotto con arte 
+                     
+                     <br>
+                     ingegnosa che solo in un punto si mostra troppo scoperta 
+                     
+                     <br>
+                     laddove un ufficiale ricorda e ripete <em><span class="choice correzione" id="d1e3356"><span class="sic visible">appuntino</span><span class="corr hidden" style="color: red;">a puntino</span></span></em> tutta la chiusa 
+                     
+                     <br>
+                     del discorso <span class="choice correzione" id="d1e3363"><span class="sic visible">pronunziato</span><span class="corr hidden" style="color: red;">pronunciato</span></span> dal 
+                     <addName>generale</addName> 
+                     <persName data-type="reale">Govone</persName> il giorno della 
+                     
+                     <br>
+                     inaugurazione degli 
+                     <rs data-type="tema">ossari</rs>. Ma questa è una eccezione: e in 
+                     
+                     <br>
+                     ogni rimanente la narrazione intrecciata col dialogo corre 
+                     
+                     <br>
+                     spedita e naturale. Vi sono alcune  
+                     <rs data-type="tema">storie pietose</rs>: per esem-
+                     
+                     <br>
+                     pio, in occasione della estrazione dei premi ai soldati di 
+                     
+                     <br>
+                     
+                     <placeName>San Marzo</placeName>, che è la terza e forse la più bella parte della ceri-
+                     
+                     <br>
+                     monia, uno dei 
+                     
+                     <foreign>
+                        <em>fac-totum</em>
+                        </foreign> 
+                     della società ci fa sapere che, quando 
+                     
+                     <br>
+                     il nome sorteggiato (<span class="choice correzione" id="d1e3406"><span class="sic visible">colla</span><span class="corr hidden" style="color: red;">con la</span></span> combinazione di tre urne) appar-
+                     
+                     <br>
+                     tiene ad un morto, il premio di cento lire si manda alla 
+                     
+                     <br>
+                     famiglia; e così l’anno scorso una povera vecchiarella pie-
+                     
+                     <br>
+                     montese avuto dalle mani del curato, dopo la messa, il premio 
+                     
+                     <br>
+                     <em>guadagnatole dal valore del <span class="choice correzione" id="d1e3422"><span class="sic visible">figliuolo</span><span class="corr hidden" style="color: red;">figliolo</span></span></em>, esclamò stupita e com-
+                     
+                     <br>
+                     mossa: <em>
+                        <quote data-type="quote"> «Come! Il mio <span class="choice correzione" id="d1e3432"><span class="sic visible">figliuolo</span><span class="corr hidden" style="color: red;">figliolo</span></span>? Oh benedetto! Si ricorda 
+                           
+                           <br>
+                           di me anche in Paradiso!»</quote></em> E nessuno le ha mai più potuto 
+                     
+                     <br>
+                     levare dal capo la leggenda improvvisata dal suo affetto su-
+                     
+                     <br>
+                     perstizioso. Se non che accanto ai fiori crescono le spine; e la
+                     
+                     <br>
+                     
+                     <addName>signora</addName> 
+                     <persName data-type="immaginario">Siciliani</persName>non rifugge dal dire le cose vere, ancorché 
+                     
+                     <br>
+                     brutte; tale il furto di un orologio lo cui lancette si erano 
+                     
+                     <br>
+                     fermate proprio alle tre e tre quarti, nel momento della mi-
+                     
+                     <br>
+                     schia più fiera e decisiva, e che si custodiva con altre pre-
+                     
+                     <br>
+                     ziose 
+                     <rs data-type="tema">reliquie</rs> di 
+                     <placeName>Solferino</placeName>, mappe, medaglie, crocelline, bottoni, 
+                     
+                     <br>
+                     lettere spesso macchiate di sangue.... Stringe il cuore anche 
+                     
+                     <br>
+                     il pensiero di quell’ufficiale che la sera della 
+                     <rs data-type="tema">battaglia</rs> un 
+                     
+                     <br>
+                     soldato portò al camposanto e volle seppellire egli stesso, 
+                     
+                     <br>
+                     senza che il becchino lo toccasse, baciandolo e singhiozzando 
+                     
+                     <br>
+                     come un bambino; ne incise pure il nome sul muro, dove 
+                     
+                     <br>
+                     rimase più 
+                     <rs data-type="tema">tempo</rs> visibile; ma il vento, il gelo e la pioggia 
+                     
+                     <br>
+                     hanno ora scalcinato l’intonaco e non vi si leggono altro che 
+                     
+                     <br>
+                     le due iniziali C... L..! Nell’ora presente la 
+                     <rs data-type="tema">memoria</rs> di quei
+                     
+                     <br>
+                     tempi e di quei fatti è utile e sano nutrimento; e a buon 
+                     
+                     <br>
+                     dritto la scrittrice prese per epigrafe il motto greco tradotto 
+                     
+                     <br>
+                     dal 
+                     <persName data-type="reale">Leopardi</persName> ; 
+                     <em>
+                        <quote data-type="quote">
+                           <em>La vostra tomba é un'ara!</em>
+                           </quote></em> La fantasia del let-   
+                     </div>
+               </div>
+            </div>
+            <div class="page">
+               <div class="image"><img src="img/bibliografia4.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-ossari2"><map name="map-ossari2"><area shape="rect" coords="13,31,234,79" href="#par1-o1.2" alt="link to par1-o1.2"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="par1-o1.2">
+                     <br>
+                     tore al pari della sua, rivede <span class="choice correzione" id="d1e3519"><span class="sic visible">dinanzi</span><span class="corr hidden" style="color: red;">davanti</span></span> a sé quelle migliaia 
+                     
+                     <br>
+                     di teschi biancheggianti, che dalle grandi occhiaie vuote
+                     
+                     <br>
+                     par che ti guardino e ti domandino: <em>
+                        <quote data-type="quote">«E voi, che cosa avete 
+                           
+                           <br>
+                           fatto voi, e che fate, e che farete di questa Italia che a noi 
+                           
+                           <br>
+                           costò la vita?....»</quote></em>
+                     </div>
+               </div>
+            </div>
+         </section>
+         <section id="not">
+            <div class="page">
+               <div class="image"><img src="img/notizie.png" alt="Facsimile pagina" style="width: 502px; height:750px; border:1px solid #ccc" usemap="#map-notizie"><map name="map-notizie"><area shape="rect" coords="377,459,427,470" href="#tit-notizie" alt="link to tit-notizie"><area shape="rect" coords="288,471,516,514" href="#par1-n1" alt="link to par1-n1"><area shape="rect" coords="289,513,517,627" href="#par2-n2" alt="link to par2-n2"></map></div>
+               <div class="text">
+                  <div class="ab-block" id="tit-notizie">
+                     
+                     <br> 
+                     NOTIZIE.
+                     
+                     </div>
+                  <div class="ab-block" id="par1-n1">   
+                     
+                     <br>
+                     - Nella 
+                     
+                     <foreign>
+                        
+                        <rs data-type="j">
+                           <em>Bibliothèque de l'école des Chartes</em>
+                           </rs>
+                        </foreign> (primo fascicolo di que-
+                     
+                     <br>
+                     st’anno), 
+                     <persName data-type="reale"> Gaston Raynaud</persName> dà una descrizione particolareggiata del 
+                     
+                     <br>
+                     
+                     <rs data-type="opere">Canzoniere Clairambault</rs> (raccolta importante di poesie francesi an-
+                     
+                     <br>
+                     tiche) finora creduto perduto, e che trovasi nella biblioteca nazionale 
+                     
+                     <br>
+                     di 
+                     <placeName>Parigi</placeName>.
+                     
+                     </div>
+                  <div class="ab-block" id="par2-n2">
+                     
+                     <br>
+                     — In questi giorni è uscito presso 
+                     
+                     <span data-type="publisher">Weger</span>
+                      a 
+                     
+                     <placeName>Brixen</placeName> (nel 
+                     <placeName>Tirolo</placeName>) il 
+                     
+                     <br>
+                     
+                     <rs data-type="tema">primo libro stampato</rs> nel 
+                     <rs data-type="tema">dialetto</rs> chiamato propriamente 
+                     <rs data-type="tema">Ladin’</rs>. Ha il 
+                     
+                     <br>
+                     titolo seguente:  
+                     <rs data-type="opere"><em>Storia di S. Genofefa trasportada t. nosc lingaz daò 
+                           
+                           <br>
+                           l. Canonico Smid da M. D. </em> (
+                        <persName data-type="reale">Mathaeus Declara</persName>)
+                        <em>plovang d’ Marco</em>
+                        </rs> (Sto-
+                     
+                     <br>
+                     ria di Santa Genovieffa del Can. Smid tradotta nella nostra lingua da 
+                     
+                     <br>
+                     
+                     <persName data-type="reale">M. D.</persName> parroco a 
+                     <placeName>Ennenberg</placeName> ). 
+                     Porsena (Brixen) 
+                     <date>1878</date>. 
+                     Quanto all’esten-
+                     
+                     <br>
+                     sione di questo 
+                     <rs data-type="tema">dialetto neolatino</rs> il 
+                     <persName data-type="reale">Bidermann</persName> nel suo libro sull’<em>esten-
+                        
+                        <br>
+                        sione dei Neolatini in 
+                        <placeName>Austria</placeName></em> conta circa 9000 Ladini propriamente 
+                     
+                     <br>
+                     detti, più di 10,000 che parlano un linguaggio simile (a 
+                     <placeName>Fassa</placeName>, 
+                     <placeName>Buchen-
+                        
+                        <br>
+                        stein</placeName>, 
+                     <placeName>Ampezzo</placeName>), e finalmente 56,000 Ladini friulani nelle parti di 
+                     <placeName>Gra-
+                        
+                        <br>
+                        disca</placeName>. Inoltre vi sono circa 30,000 Ladini occidentali nei 
+                     <placeName>Grigioni</placeName>,
+                     
+                     <br>
+                     (
+                     <placeName>Svizzera</placeName>) che hanno una 
+                     <rs data-type="tema">letteratura</rs> e dei giornali propri.
+                     
+                     <br>
+                     (
+                     <rs data-type="j">Allgemeine Zeitung</rs>)
+                     
+                     </div>
+               </div>
+            </div>
+         </section>
+         <div class="glossario" id="glossario">
+            <h2>Glossario</h2>
+            <ul>
+               <li>
+                  <h3>Luoghi</h3>
+                  <ul>
+                     <li>Avigliano</li>
+                     <li>Basilicata</li>
+                     <li>Calabrie</li>
+                     <li>Ba-
+                        
+                        
+                        
+                        rese</li>
+                     <li>Leccese</li>
+                     <li>Provincia di Bari</li>
+                     <li>Oria</li>
+                     <li>Pro-
+                        
+                        
+                        vincia di Bari</li>
+                     <li>Terre d’Otranto</li>
+                     <li>littoralelitorale barese</li>
+                     <li>Barese</li>
+                     <li>terra d’O-
+                        
+                        
+                        tranto</li>
+                     <li>province di Basilicata e di Bari</li>
+                     <li>quella di Lecce</li>
+                     <li>provincia
+                        
+                        
+                        di Lecce</li>
+                     <li>provin-
+                        
+                        
+                        cia di Lecce</li>
+                     <li>provincie meridio-
+                        
+                        
+                        nali</li>
+                     <li>Puglie</li>
+                     <li>Puglia</li>
+                     <li>Bari</li>
+                     <li>Trani</li>
+                     <li>Andria</li>
+                     <li>Bitonto</li>
+                     <li>Bisceglie</li>
+                     <li>Co-
+                        
+                        
+                        ato</li>
+                     <li>Altamura</li>
+                     <li>Gravina</li>
+                     <li>Capi-
+                        
+                        
+                        tanata</li>
+                     <li>pianura pugliese</li>
+                     <li>Toscana</li>
+                     <li>Provincia di Lecce</li>
+                     <li>Brin-
+                        
+                        
+                        disi</li>
+                     <li>Roma</li>
+                     <li>Italia</li>
+                     <li>Grecia</li>
+                     <li>Delfo</li>
+                     <li>Pireo</li>
+                     <li>Palermo</li>
+                     <li>Sicilia</li>
+                     <li>Veneto</li>
+                     <li>Genova</li>
+                     <li>San Martino</li>
+                     <li>Sol-
+                        
+                        
+                        ferino</li>
+                     <li>San Marzo</li>
+                     <li>Solferino</li>
+                     <li>Parigi</li>
+                     <li>Brixen</li>
+                     <li>Tirolo</li>
+                     <li>Ennenberg</li>
+                     <li>Austria</li>
+                     <li>Fassa</li>
+                     <li>Buchen-
+                        
+                        
+                        stein</li>
+                     <li>Ampezzo</li>
+                     <li>Gra-
+                        
+                        
+                        disca</li>
+                     <li>Grigioni</li>
+                     <li>Svizzera</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Luoghi naturali</h3>
+                  <ul>
+                     <li>Appennini</li>
+                     <li>stretto
+                        
+                        
+                        di Messina</li>
+                     <li>Murge</li>
+                     <li>monte Parnaso</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Persone</h3>
+                  <ul>
+                     <li>Shakespeare</li>
+                     <li>Pizia</li>
+                     <li>MATILDE SERAO</li>
+                     <li>Zanella</li>
+                     <li>Govone</li>
+                     <li>Leopardi</li>
+                     <li> Gaston Raynaud</li>
+                     <li>Mathaeus Declara</li>
+                     <li>M. D.</li>
+                     <li>Bidermann</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Personaggi</h3>
+                  <ul>
+                     <li>D. Rodrigo</li>
+                     <li>Apollo</li>
+                     <li>Roberto</li>
+                     <li>Cariclea</li>
+                     <li>Ro-
+                        
+                        
+                        berto</li>
+                     <li>Elvira</li>
+                     <li>Paolo</li>
+                     <li>Edvige</li>
+                     <li>Teobaldo</li>
+                     <li>Fausto</li>
+                     <li>Manfredo</li>
+                     <li>Siciliani</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Date</h3>
+                  <ul>
+                     <li> 2025</li>
+                     <li> Luglio 2025</li>
+                     <li> 6 gennaio 1878</li>
+                     <li> 29 gennaio 1882</li>
+                     <li>2 Gennaio 1881</li>
+                     <li>1881</li>
+                     <li>MDCCCLXXXI</li>
+                     <li>24 giugno</li>
+                     <li>1878</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Temi</h3>
+                  <ul>
+                     <li>raccolta delle olive</li>
+                     <li>operosità</li>
+                     <li>emigrazione ed immigrazione</li>
+                     <li>marea vivente</li>
+                     <li>agricoltura</li>
+                     <li>immigrazione di contadini</li>
+                     <li>condizione della plebe campagnuola campagnola</li>
+                     <li>condizione del contadino</li>
+                     <li>estrazione dell’olio</li>
+                     <li>Il contadino è per sua natura tenace del passato</li>
+                     <li>unificazione italiana</li>
+                     <li>coltivazione degli ulivi</li>
+                     <li>fab-
+                        
+                        
+                        bricazione degli oli</li>
+                     <li>lotta indeclinabile ed incessante</li>
+                     <li>estrazione degli oli</li>
+                     <li>produrre oli fini coi 
+                        
+                        
+                        metodi novelli</li>
+                     <li>il paese e le sue classi</li>
+                     <li>malcontento profondo della grande 
+                        
+                        
+                        maggioranza</li>
+                     <li>primo periodo di prova di un 
+                        
+                        
+                        libero governo</li>
+                     <li>confini dei nuovi 
+                        
+                        
+                        poteri</li>
+                     <li>questioni sociali</li>
+                     <li>sentimento nazionale</li>
+                     <li>dell’unità, della 
+                        
+                        
+                        libertà e dell’indipendenza</li>
+                     <li>unità</li>
+                     <li>mezzi di 
+                        
+                        
+                        comunicazione</li>
+                     <li>viaggio della ca-
+                        
+                        
+                        pitale dal nord al sud</li>
+                     <li>problema reli-
+                        
+                        
+                        gioso</li>
+                     <li>coscienza nazionale</li>
+                     <li>settentrione 
+                        
+                        
+                        e il mezzogiorno d’Italia</li>
+                     <li>risorgimento</li>
+                     <li>libero regime</li>
+                     <li>sentimento nazio-
+                        
+                        
+                        nale</li>
+                     <li>suffragio</li>
+                     <li>corpo elettorale</li>
+                     <li>ri-
+                        
+                        
+                        forma</li>
+                     <li>riforma</li>
+                     <li>vita pub-
+                        
+                        
+                        blica</li>
+                     <li>interesse generale</li>
+                     <li>preminenza sociale</li>
+                     <li>abo-
+                        
+                        
+                        lizione del corso forzato</li>
+                     <li>riforma amministrativa
+                        
+                        
+                        con la questione delle finanze comunali</li>
+                     <li>vita economica della nazione</li>
+                     <li>funzioni pubbliche</li>
+                     <li>sentimento della responsabilità</li>
+                     <li>vita pubblica</li>
+                     <li>progresso</li>
+                     <li>nostalgia</li>
+                     <li>rimpianti</li>
+                     <li>antichità</li>
+                     <li>passato</li>
+                     <li>essere amata e di non amare</li>
+                     <li>amore</li>
+                     <li>non voleva o non po-
+                        
+                        
+                        teva amare</li>
+                     <li>tragedia dell’amore</li>
+                     <li>morte</li>
+                     <li>amore fatto di orgoglio infranto e di rimorso</li>
+                     <li>amore
+                        
+                        
+                        funebre</li>
+                     <li>oracolo 
+                        
+                        
+                        di Delfo</li>
+                     <li>ora-
+                        
+                        
+                        colo</li>
+                     <li>oracolo</li>
+                     <li>realtà di un’agonia</li>
+                     <li>sogno di una morte</li>
+                     <li>dolore</li>
+                     <li>ossari</li>
+                     <li>pia commemorazione</li>
+                     <li>ossario</li>
+                     <li>reliquie</li>
+                     <li>os-
+                        
+                        
+                        sari</li>
+                     <li>battaglia</li>
+                     <li>storie pietose</li>
+                     <li>tempo</li>
+                     <li>memoria</li>
+                     <li>primo libro stampato</li>
+                     <li>dialetto</li>
+                     <li>Ladin’</li>
+                     <li>dialetto neolatino</li>
+                     <li>letteratura</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Opere</h3>
+                  <ul>
+                     <li>Edvige, racconto</li>
+                     <li>Una visita agli ossari di San Martino
+                        
+                        
+                        
+                        e Solferino</li>
+                     <li>Canzoniere Clairambault</li>
+                     <li>Storia di S. Genofefa trasportada t. nosc lingaz daò 
+                        
+                        
+                        l. Canonico Smid da M. D.  (Mathaeus Declara)
+                        plovang d’ Marco
+                        </li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Concetti</h3>
+                  <ul>
+                     <li>desideri</li>
+                     <li>speranze</li>
+                     <li>deficienza</li>
+                     <li>miseria</li>
+                     <li>gioventù</li>
+                     <li>peccati</li>
+                     <li>pudore</li>
+                     <li>virtù</li>
+                     <li>onestà</li>
+                     <li>verecondia</li>
+                     <li>grazia</li>
+                     <li>peccato</li>
+                     <li>solidarietà</li>
+                     <li>coscienza</li>
+                     <li>illusioni</li>
+                     <li>idea</li>
+                     <li>libertà</li>
+                     <li>arbitrio</li>
+                     <li>sapienza</li>
+                     <li>idee</li>
+                     <li>concetto</li>
+                     <li>sincerità</li>
+                     <li>viltà</li>
+                     <li>desiderio</li>
+                     <li>spirito</li>
+                     <li>ambizioni</li>
+                     <li>destino</li>
+                     <li>speranza</li>
+                     <li>agonia</li>
+                     <li>fantasia</li>
+                     <li>pace</li>
+                     <li>serenità</li>
+                     <li>sogno</li>
+                     <li>ideale</li>
+                     <li>fantasie</li>
+                     <li>pensiero</li>
+                     <li>verità</li>
+                     <li>fede</li>
+                     <li>bontà</li>
+                     <li>scetticismo</li>
+                     <li>semplicità</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Organizzazioni</h3>
+                  <ul>
+                     <li>parlamento</li>
+                     <li>partiti</li>
+                     <li>governo</li>
+                     <li>la Corona</li>
+                     <li>Sinistra</li>
+                     <li>sètte sovversive</li>
+                     <li>governi</li>
+                     <li>regime</li>
+                     <li>esercito</li>
+                     <li>funzionari giudiziari, 
+                        
+                        
+                        amministrativi, finanziari</li>
+                     <li>papato</li>
+                     <li>istituzioni</li>
+                     <li>Stato</li>
+                     <li>partito</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Lingua Straniera</h3>
+                  <ul>
+                     <li>
+                        inane
+                        
+                        
+                        telum sine ictu
+                        </li>
+                     <li>
+                        fac-totum
+                        </li>
+                     <li>
+                        
+                        Bibliothèque de l'école des Chartes
+                        
+                        </li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Case Editrici</h3>
+                  <ul>
+                     <li> Università di Pisa</li>
+                     <li> Casa Editrice Barbèra</li>
+                     <li>G. Barbèra,
+                        
+                        
+                        editore</li>
+                     <li>Nicola Zanichelli</li>
+                     <li>Weger</li>
+                  </ul>
+               </li>
+               <li>
+                  <h3>Riviste</h3>
+                  <ul>
+                     <li>
+                        Bibliothèque de l'école des Chartes
+                        </li>
+                     <li>Allgemeine Zeitung</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="meta-info" id="info">
+            <h2>Informazioni bibliografiche</h2>
+            <p><strong>Titolo:</strong> LA RASSEGNA SETTIMANALE </p>
+            <p><strong>Edizione:</strong> 2025</p>
+            <p><strong>A cura di:</strong></p>
+            <p><strong>Codificato da:</strong></p>
+            <p><strong>Pubblicato da:</strong> Università di Pisa
+               ( Luglio 2025)
+               </p>
+            <p><strong>Fonte:</strong> Rassegna settimanale di Politica, Scienze, Lettere ed Arti</p>
+            <p><strong>Autori:</strong> Leopoldo Franchetti,  Sidney Sonnino</p>
+            <p><strong>Luogo:</strong> Firenze</p>
+            <p><strong>Editore:</strong> Casa Editrice Barbèra</p>
+            <p><strong>Date:</strong> 6 gennaio 1878 –  29 gennaio 1882</p>
+         </div>
+      </main>
+   </body>
+</html>
