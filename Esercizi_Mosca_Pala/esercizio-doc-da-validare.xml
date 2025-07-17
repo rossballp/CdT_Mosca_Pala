@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- Esercizio: Aprire il file XML non ben formato presente nel repository
+github:
+Validare un documento XML e definire uno schema, validarlo con un parser XML, correggerlo (commentando gli errori e le modifiche), aggiungere un figlio (child) ad un elemento
+aggiungere un fratello (sibling) ad un elemento
+
+documento xml da validare -->
+<!-- 
+    file: esercizio-doc-da-validare
+    nome: Rossella Pala
+    data: 14.06.2025
+-->
+
+<!-- corpo del documento XML-->
+<elementoRadice>
+    <elementoFiglio>
+        <elementoAnnidato>
+        </elementoAnnidato>
+    </elementoFiglio>
+    <elementoFiglio2> <!-- aggiunto elemento child-->
+    </elementoFiglio2>
+    <elementoFiglio>
+        <elementoAnnidato> <!-- qua ho corretto il tag elementoAnnidato che veniva aperto due volte e veniva chiuso una sola volta-->
+        </elementoAnnidato> 
+    </elementoFiglio>
+    <elementoFiglio>
+        <elementoAnnidato> <!-- qua il tag elementoAnnidato non veniva chiuso -->
+            <elementoFiglio></elementoFiglio> <!-- elementoFiglio ora viene aperto, prima veniva solo chiuso -->
+            <elementoSibling></elementoSibling> <!-- aggiunto elemento sibling-->
+        </elementoAnnidato>
+    </elementoFiglio> 
+</elementoRadice>
+
+<!-- epilogo -->

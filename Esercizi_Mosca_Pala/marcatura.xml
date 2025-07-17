@@ -1,0 +1,96 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+          <titleStmt>
+            <title>Corrispondenze da Lecce, La raccolta delle olive</title>
+          </titleStmt>
+          <publicationStmt>
+            <p>Pubblicazione tramite La Rassegna Settimanale</p>
+          </publicationStmt>
+          <sourceDesc>
+            <p>Rivista di Politica, Arte e Cultura</p>
+          </sourceDesc>
+        </fileDesc>
+      </teiHeader>
+
+
+<text>
+<body>
+<div type= "pagina" n="1">
+<p>
+Appena cessato l’allegro canto della vendemmia, si co- 
+mincia la <rs type="tema">raccolta delle olive</rs>. Alla tiepida aria d’autunno,
+profumata dal forte odore del mosto pugliese, succede la
+rigida atmosfera invernale, impregnata dal grato odore del
+nocciolo di olive che brucia continuamente nei frantoi, qui  
+qui detti volgarmente <hi rend="italic">trappeti</hi>.
+</p>
+
+<p>
+Gli <geogName>Appennini</geogName> presso <placeName><settlement type="city">Avigliano</settlement></placeName> si biforcano; un ramo
+si avanza per la <placeName type="region">Basilicata</placeName> e le <placeName type="region">Calabrie</placeName> giù fino allo <geogName>stretto
+di Messina</geogName>, ed un altro con più umili altezze corre sul <placeName type="district">Ba-
+rese</placeName> ed il <placeName type="district">Leccese</placeName>, formando le cosiddette <geogName>Murge</geogName>, che non
+sono in verità monti, ma colline, anzi altipiani, che segnano
+il confine naturale della <placeName type="district">Provincia di Bari</placeName> e della <placeName type="region">Basilicata</placeName>.
+Le <geogName>Murge</geogName>, dopo aver raggiunto la maggiore loro elevatezza
+presso <placeName><settlement type="city">Oria</settlement></placeName>, si abbassano e si spandono nel <placeName type="district">Leccese</placeName>, dando
+al suolo la più capricciosa varietà.
+</p>
+
+<p>
+L’<rs type="tema">operosità</rs> degli abitanti ha fatti mutar faccia alla <placeName type="district">Pro-
+vincia di Bari</placeName> che, quasi deserta negli altipiani delle <geogName>Murge</geogName>,
+a misura che scende con dolce pendìo fino al mare si co-
+pre di vigne e oliveti, tempestata qua e là di giardini fio-
+riti e di agrumeti. Questa artificiale e varia floridezza di
+suolo va cessando nelle <placeName type="district">Terre d’Otranto</placeName>, dove si addensano
+foreste di olive, che col loro cinereo fogliame danno un ma-
+linconico aspetto alla provincia. La vite sul <placeName type="region">littorale barese</placeName>
+è consociata all’ulivo, crescono da anni ed anni insieme e
+non si sa quasi concepire un vigneto spogliato di ulivi. La 
+vite allevata, curata, accarezzata dal contadino barese colle
+maggiori sollecitudini ed esposta ai perpetui raggi del sole,
+qui nel <placeName type="district">Leccese</placeName>, serpeggia per terra, sporca il suo frutto,
+</p>
+</div>
+
+
+<div type="pagina"  n="2">
+<p>
+che quasi per rinfaccio offre al colono il più generoso vino
+della penisola; e invece si eleva sovra essa gigante e mae-
+stoso l’olivo. Non è già che il <placeName type="district">Barese</placeName> dia solo più cura alla
+vite e il <placeName type="district">Leccese</placeName> all’olivo; ma perchè l’ulivo nella <placeName type="district">terra d’O-
+tranto</placeName> cresce per forza ingenita del suolo a bosco e a fore-
+sta. Gli alberi coi loro rami vigorosi e colossali in qualche
+luogo si avvicinano, s’intrecciano, vietando fin ai raggi 
+del sole di farsi strada al suolo, su cui cresce umido e ver-
+de il muschio e non altra vegetazione. 
+</p>
+
+<p>
+Dalle vicine <placeName type="district">province di Basilicata e di Bari</placeName> scendono 
+in <placeName type="district">quella di Lecce</placeName> numerose schiere di contadini, che finiti
+i lavori della stagione risalgono ai villaggi o ai monti na-
+tali, per ridiscendere ai bisogni della stagione novella. Que-
+sta <rs type="tema">emigrazione ed immigrazione</rs> di lavoratori è una specie 
+di marea vivente, che si rinnova tre volte l’anno. La <placeName type="district">provincia
+di Lecce</placeName> ha una popolazione di 493,594 abitanti sparsa sopra 
+un’estensione di suolo di chilometri quadrati 8,529 coltivati in 
+parte a vigne e a ulivi, il rimanente a pascoli ed a granaglie. 
+La popolazione è insufficiente ai bisogni dell’<rs type="tema">agricoltura</rs>, spe-
+cialmente per le raccolte delle granaglie e delle ulive. A questa 
+insufficienza della popolazione si aggiunge un’altra causa, che 
+determina questa <rs type="tema">immigrazione di contadini</rs> nella <placeName type="district">provin-
+cia di Lecce</placeName>.
+</p>
+</div>
+
+</body>
+</text>
+</TEI>

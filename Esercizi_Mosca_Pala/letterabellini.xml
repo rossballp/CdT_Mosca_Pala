@@ -1,0 +1,114 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+          <titleStmt>
+            <title>Lettera Bellini</title>
+          </titleStmt>
+          <publicationStmt>
+            <p>Pagina Lettera Bellini</p>
+          </publicationStmt>
+          <sourceDesc>
+            <p>SLIDE N.94</p>
+          </sourceDesc>
+        </fileDesc>
+      </teiHeader>
+
+
+    <facsimile>
+        <!-- pagina lettera bellini -->
+        <surface n="1" xml:id="letterabellini">
+            <graphic url="letterabellini.png" width="502px" height="749px" />
+
+            <zone ulx="8" uly="8" lrx="533" lry="414" xml:id="p1" />
+            <zone ulx="4" uly="425" lrx="534" lry="719" xml:id="p2"/>
+            <zone ulx="537" uly="2" lrx="1088" lry="85" xml:id="p3" />
+            <zone ulx="584" uly="85" lrx="1086" lry="710" xml:id="p4"/>
+            <zone ulx="832" uly="666" lrx="1081" lry="720" xml:id="firma"/>
+       </surface>
+   </facsimile>
+
+   <text xml:id="lettera">
+        <body>
+            <div type="pagina" n="1">
+            
+                <pb n="1" facs="letterabellini.png" />
+                
+                <ab facs="#p1">
+                    
+                    <lb n="1" facs="#p1-lin1"/>
+                    à <unclear>Monfern</unclear>
+            
+                    <lb  n="2" facs="#p1-lin2"/>
+                    Monsieur Le <addName type="epithet">Comte</addName> <persName><surname>Pepoli</surname></persName>  
+           
+                    <lb n="3" facs="#p1-lin3" />
+                   N.1: <unclear>popage</unclear> petits  
+                                 
+                    <lb n="4" /> 
+                    à <placeName><settlement type="city">Paris</settlement></placeName> 
+
+                </ab>
+                <ab facs="#p2">
+                    <lb n="5" />
+                    Lettera del 
+
+                    <lb n="6" facs="#p2-lin6" />
+                    <persName><surname>Bellini</surname></persName> sul Duetto
+
+                    <lb n="7" facs="#p2-lin7" />
+                    <unclear>del p:</unclear> Atto dei Puritani 
+
+                </ab>
+
+                <ab facs="#p3">
+                   <lb n="8" facs="#p3-lin8" /> 
+                   <date when= "06-26">Juin 26</date>: <placeName><settlement type="city">Puteau</settlement></placeName>  - <unclear>N:19 bis rampe</unclear>
+                    
+                    <lb n="9" facs="#p3-lin9"/> 
+                    de <placeName><settlement type="city">Neuilly</settlement></placeName> 
+                </ab>
+
+                <ab facs="#p4">
+                    <lb n="10" facs="#p4-lin10"/> 
+                    Mio caro <persName>Carluccio</persName>
+
+                    <lb n="11"/>
+                    Avendo steso l'intero duetto
+
+                    <lb n="12"/> 
+                    e mancando in esso qualche 
+
+                    <lb n="13"/> 
+                    cosetta, desidererei che tu
+
+                    <lb n="14"/> 
+                    t'incommodassi a venire à
+
+                    <lb n="15" facs="#p4-lin15" /> 
+                    <placeName><settlement type="city">Puteau</settlement></placeName> per tutto fissare e 
+
+                    <lb n="16"/>
+                    nell'istesso tempo darmi la 
+
+                    <lb n="17"/>
+                    sortita di <persName><surname>Rubini</surname></persName>, se è termi- 
+
+                    <lb n="18"/>
+                    nata. T'aspetto in qual giorno
+
+                    <lb n="19"/>
+                    ed in qual'ora vorrai. - Addio
+                </ab>
+                <ab facs="#firma">
+                    <lb n="20" facs="#firma-lin20" />
+                    il tuo <persName>Vincenzillo</persName>
+                </ab>
+</div>
+</body>
+</text>
+
+   </TEI>

@@ -1,0 +1,9 @@
+<?xml version ="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- scrivere e fare il check di un xml NON opportunamente annidato -->
+
+<persona>
+    <nome>Rossella</nome>
+    <cognome>Pala<cognome>
+  </persona>
+
+  

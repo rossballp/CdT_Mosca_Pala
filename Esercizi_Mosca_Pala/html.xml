@@ -1,0 +1,9 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!-- inserire all'intenro di un tag un frammento do codice HTML -->
+
+
+<elementoRadice>
+  <elementoFiglio> 
+    <htmlCode> <![CDATA[ <h1>Capitolo Primo</h1> <h2>Sezione Seconda</h2> ]]> </htmlCode> 
+  </elementoFiglio>
+</elementoRadice>

@@ -1,0 +1,38 @@
+<?xml version ="1.0" encoding="UTF-8"?>
+<!DOCTYPE TEI SYSTEM "tei_all.dtd">
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+
+
+    <teiHeader>
+        <fileDesc>
+          <titleStmt>
+            <title>pagina selezionata dal sito del CDEC</title>
+          </titleStmt>
+          <publicationStmt>
+            <p>pagina selezionata dal sito del CDEC</p>
+          </publicationStmt>
+          <sourceDesc>
+            <p>CDEC</p>
+          </sourceDesc>
+        </fileDesc>
+      </teiHeader>
+
+
+<text>
+<body>
+<div type= "pagina" n="1">
+<p>
+<date when="1920-04-25">25 Aprile 1920</date> - <date when="1940-07-29">29 Luglio 1940 </date> - Vent'anni:
+appena il <unclear>l?mbare</unclear> della vita, ma breve e lumino-
+sa veramente, come dice il ricordo marmoreo - 
+<add> <unclear>renne</unclear> <unclear>fiamma</unclear> mentre che si svolgeva tra casa e scuola</add>
+promessa, speranza, disagio. Concedete a chi 
+<add>il formarsi e lo sbocciare di un anima eletta di un'intelligenza</add>
+l'ha conosciuto nella prima infanzia, di rielabora- 
+<add>eccezionale;</add>
+re anche i ricordi di quei primi anni <del>di</del> felici 
+<del>Quando si apriva giocondamente alla vita,</del> </p>
+</div>
+</body>
+</text>
+</TEI>
